@@ -66,9 +66,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
-  <!-- ─── FONTES & CSS ───────────────────────────────── -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- ─── FONTES (PRELOAD + STYLESHEET) ──────────────── -->
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="preload" as="style" href="style.css">
   <link rel="stylesheet" href="style.css">
 
   <!-- ─── SITEMAP ────────────────────────────────────── -->
@@ -367,8 +372,22 @@
       </a>
 
       <ul class="nav__links" id="navLinks">
-        <li><a href="/#solucoes" class="nav__link">Soluções</a></li>
-        <li><a href="/#perguntas" class="nav__link">Perguntas</a></li>
+        <li class="nav__item nav__item--dropdown" data-dropdown="servicos">
+          <button type="button" class="nav__link nav__link--toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-servicos">
+            Serviços
+            <svg class="nav__caret" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+              <path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="nav__dropdown" id="dropdown-servicos" role="menu">
+            <li role="none">
+              <a href="/servicos/cobranca-empresarial.html" class="nav__dropdown-item" role="menuitem">
+                <strong>Cobrança Empresarial</strong>
+                <span>Recuperação de crédito via ação executiva e monitória</span>
+              </a>
+            </li>
+          </ul>
+        </li>
         <li><a href="/sobre.html" class="nav__link nav__link--active" aria-current="page">Sobre</a></li>
         <li><a href="/privacidade.html" class="nav__link">Privacidade</a></li>
         <li><a href="/#contato" class="nav__link nav__link--cta">Agendar Diagnóstico</a></li>
@@ -502,7 +521,7 @@
           </p>
         </div>
 
-        <div class="pain__grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="pain__grid pain__grid--two">
 
           <article class="pain-card reveal">
             <div class="pain-card__num" aria-hidden="true">01</div>
@@ -756,7 +775,7 @@
           </h2>
         </div>
 
-        <div class="pain__grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="pain__grid pain__grid--two">
 
           <article class="pain-card reveal">
             <div class="pain-card__num" aria-hidden="true">Q1</div>
@@ -920,6 +939,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>

@@ -45,6 +45,78 @@ document.addEventListener('keydown', e => {
 });
 
 
+/* ── DROPDOWN "SERVIÇOS" ────────────────────────────
+   Desktop: hover via CSS
+   Mobile: click/tap toggla .open
+   Acessibilidade: ESC fecha · outside click fecha · ARIA em sincronia */
+const dropdownItems = document.querySelectorAll('.nav__item--dropdown');
+
+dropdownItems.forEach(item => {
+  const toggle = item.querySelector('.nav__link--toggle');
+  const dropdown = item.querySelector('.nav__dropdown');
+  if (!toggle || !dropdown) return;
+
+  toggle.addEventListener('click', (e) => {
+    // No desktop (hover) o clique do botão não faz nada (o hover já mostra).
+    // No mobile (sem hover reliable), toggla .open.
+    const isMobile = window.matchMedia('(max-width: 640px)').matches
+                   || !window.matchMedia('(hover: hover)').matches;
+    if (isMobile) {
+      e.preventDefault();
+      e.stopPropagation();
+      const willOpen = !item.classList.contains('open');
+      // Fecha outros dropdowns abertos
+      dropdownItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove('open');
+          other.querySelector('.nav__link--toggle')
+            ?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.toggle('open', willOpen);
+      toggle.setAttribute('aria-expanded', String(willOpen));
+    }
+  });
+
+  // Seta aria-expanded quando desktop hover abre (para screen readers)
+  item.addEventListener('mouseenter', () => {
+    if (window.matchMedia('(hover: hover)').matches) {
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+  item.addEventListener('mouseleave', () => {
+    if (window.matchMedia('(hover: hover)').matches) {
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+// Fechar dropdown ao clicar fora (mobile)
+document.addEventListener('click', (e) => {
+  dropdownItems.forEach(item => {
+    if (item.classList.contains('open') && !item.contains(e.target)) {
+      item.classList.remove('open');
+      item.querySelector('.nav__link--toggle')
+        ?.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+// ESC fecha qualquer dropdown aberto
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    dropdownItems.forEach(item => {
+      if (item.classList.contains('open')) {
+        item.classList.remove('open');
+        const toggle = item.querySelector('.nav__link--toggle');
+        toggle?.setAttribute('aria-expanded', 'false');
+        toggle?.focus();
+      }
+    });
+  }
+});
+
+
 /* ── HERO TICKER ────────────────────────────────────── */
 const ticker = document.getElementById('heroTicker');
 if (ticker) {
@@ -58,24 +130,38 @@ if (ticker) {
 
 
 /* ── SCROLL REVEAL ──────────────────────────────────── */
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-);
+// Fallback para navegadores sem IntersectionObserver
+if (!('IntersectionObserver' in window)) {
+  document.querySelectorAll('.reveal, .reveal-instant').forEach(el => el.classList.add('visible'));
+} else {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -10% 0px' }
+  );
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// Instant reveals — cinematic stagger for hero impact
-document.querySelectorAll('.reveal-instant').forEach((el, i) => {
-  setTimeout(() => el.classList.add('visible'), 100 + i * 150);
-});
+  // Instant reveals — cinematic stagger para o hero (LCP não bloqueado)
+  document.querySelectorAll('.reveal-instant').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 80 + i * 120);
+  });
+
+  // Fail-safe: depois de 2,5s, qualquer .reveal ainda invisível é revelada.
+  // Evita "buracos" caso o observer falhe por layout complexo, print, deep-link ou JS parcial.
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.visible), .reveal-instant:not(.visible)')
+        .forEach(el => el.classList.add('visible'));
+    }, 2500);
+  });
+}
 
 
 
@@ -128,7 +214,6 @@ form?.addEventListener('submit', async (e) => {
   if (!validateForm()) return;
 
   const btn = form.querySelector('button[type="submit"]');
-  const originalText = btn.innerHTML;
 
   btn.disabled = true;
   btn.innerHTML = `

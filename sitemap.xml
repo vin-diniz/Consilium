@@ -40,6 +40,20 @@
   </url>
 
   <url>
+    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/cobranca-empresarial.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:title>Cobrança Empresarial — Recuperação de Crédito para PMEs</image:title>
+      <image:caption>Guia 5W2H do serviço de cobrança empresarial especializado: ação executiva, ação monitória, pesquisa patrimonial e penhora online via Sisbajud</image:caption>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://consiliumhub.com.br/privacidade.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/privacidade.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/privacidade.html"/>
