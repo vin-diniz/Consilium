@@ -1,0 +1,110 @@
+# ═══════════════════════════════════════════════════════
+# Consilium — Advocacia Empresarial
+# robots.txt · Liberação total para crawlers legítimos
+# ═══════════════════════════════════════════════════════
+
+# ─── TODOS OS ROBÔS ─────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow:
+
+# ─── GOOGLE ────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# ─── BING ──────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+# ─── OUTROS MOTORES ────────────────────────────────────
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ─── BOTS DE IA (AI MODE / AI OVERVIEWS) ───────────────
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ─── REDES SOCIAIS (CARD PREVIEWS) ─────────────────────
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ─── SITEMAP ───────────────────────────────────────────
+Sitemap: https://consiliumhub.com.br/sitemap.xml
+
+# ─── HOST CANÔNICO ─────────────────────────────────────
+Host: https://consiliumhub.com.br

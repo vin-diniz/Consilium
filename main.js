@@ -78,47 +78,7 @@ document.querySelectorAll('.reveal-instant').forEach((el, i) => {
 });
 
 
-/* ── COUNTER ANIMATION ──────────────────────────────── */
-function animateCounter(el) {
-  const target  = parseFloat(el.dataset.target);
-  const prefix  = el.dataset.prefix  ?? '';
-  const suffix  = el.dataset.suffix  ?? '';
-  const isFloat = target % 1 !== 0;
-  const duration = 1800;
-  const startTime = performance.now();
 
-  function easeOutQuart(t) {
-    return 1 - Math.pow(1 - t, 4);
-  }
-
-  function update(now) {
-    const elapsed  = now - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased    = easeOutQuart(progress);
-    const current  = target * eased;
-    const display  = isFloat ? current.toFixed(1) : Math.floor(current).toString();
-    el.textContent = `${prefix}${display}${suffix}`;
-
-    if (progress < 1) requestAnimationFrame(update);
-    else el.textContent = `${prefix}${isFloat ? target.toFixed(1) : target}${suffix}`;
-  }
-
-  requestAnimationFrame(update);
-}
-
-const counterObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        counterObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
-
-document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
 
 
 /* ── ACTIVE NAV LINK ─────────────────────────────────── */
