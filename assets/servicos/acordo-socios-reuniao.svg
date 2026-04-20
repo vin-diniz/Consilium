@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mesa de reunião com múltiplos sócios negociando acordo societário">
+  <defs>
+    <linearGradient id="bgRS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="60%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="spotRS" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#c09030" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c09030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="deskRS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#14110b"/>
+    </linearGradient>
+    <linearGradient id="goldRS" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="personRS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1c15"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bgRS)"/>
+  <rect width="1600" height="500" fill="url(#spotRS)"/>
+
+  <!-- Grid sutil -->
+  <g fill="#c09030" fill-opacity="0.06">
+    <circle cx="100" cy="50" r="1"/><circle cx="280" cy="40" r="1"/><circle cx="460" cy="70" r="1"/>
+    <circle cx="640" cy="45" r="1"/><circle cx="820" cy="60" r="1"/><circle cx="1000" cy="50" r="1"/>
+    <circle cx="1180" cy="70" r="1"/><circle cx="1360" cy="45" r="1"/><circle cx="1500" cy="60" r="1"/>
+    <circle cx="150" cy="180" r="1"/><circle cx="1450" cy="170" r="1"/>
+  </g>
+
+  <!-- Parede de fundo com linha arquitetônica -->
+  <line x1="0" y1="240" x2="1600" y2="240" stroke="url(#goldRS)" stroke-width="0.8" stroke-opacity="0.18"/>
+
+  <!-- Mesa oval (visão em perspectiva) -->
+  <ellipse cx="800" cy="410" rx="720" ry="70" fill="url(#deskRS)" stroke="url(#goldRS)" stroke-width="1.5" stroke-opacity="0.5"/>
+  <ellipse cx="800" cy="410" rx="640" ry="50" fill="url(#goldRS)" fill-opacity="0.04"/>
+
+  <!-- Documentos centrais -->
+  <g transform="translate(720,360)">
+    <rect x="6" y="6" width="170" height="50" fill="#0b0a08" fill-opacity="0.6"/>
+    <rect x="0" y="0" width="170" height="50" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.5" stroke-width="0.8"/>
+    <line x1="14" y1="14" x2="100" y2="14" stroke="url(#goldRS)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="14" y1="26" x2="140" y2="26" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <line x1="14" y1="36" x2="120" y2="36" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+  </g>
+
+  <!-- Caneta no centro -->
+  <g transform="translate(840,395) rotate(-10)">
+    <rect x="0" y="-2" width="60" height="4" rx="1" fill="url(#goldRS)"/>
+    <polygon points="0,0 -6,-2 -6,2" fill="#d4a84a"/>
+  </g>
+
+  <!-- SÓCIO 1 · esquerda -->
+  <g transform="translate(140,130)">
+    <circle cx="70" cy="50" r="34" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.5" stroke-width="1.2"/>
+    <path d="M 0 220 Q 0 105, 70 95 Q 140 105, 140 220 Z" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 42 105 L 70 128 L 98 105 L 85 155 L 55 155 Z" fill="#0b0a08"/>
+    <polygon points="68,128 72,128 77,200 63,200" fill="url(#goldRS)" fill-opacity="0.55"/>
+  </g>
+
+  <!-- SÓCIO 2 · meio-esquerda -->
+  <g transform="translate(440,120)">
+    <circle cx="70" cy="50" r="34" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.5" stroke-width="1.2"/>
+    <path d="M 0 220 Q 0 105, 70 95 Q 140 105, 140 220 Z" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 42 105 L 70 128 L 98 105 L 85 155 L 55 155 Z" fill="#0b0a08"/>
+    <polygon points="68,128 72,128 77,200 63,200" fill="url(#goldRS)" fill-opacity="0.5"/>
+  </g>
+
+  <!-- SÓCIO 3 · meio-direita -->
+  <g transform="translate(1020,120)">
+    <circle cx="70" cy="50" r="34" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.5" stroke-width="1.2"/>
+    <path d="M 0 220 Q 0 105, 70 95 Q 140 105, 140 220 Z" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 42 105 L 70 128 L 98 105 L 85 155 L 55 155 Z" fill="#0b0a08"/>
+    <polygon points="68,128 72,128 77,200 63,200" fill="url(#goldRS)" fill-opacity="0.5"/>
+  </g>
+
+  <!-- SÓCIO 4 · direita (majoritário, mais alto ombro) -->
+  <g transform="translate(1320,130)">
+    <circle cx="70" cy="50" r="36" fill="url(#personRS)" stroke="url(#goldRS)" stroke-opacity="0.7" stroke-width="1.5"/>
+    <path d="M 0 220 Q 0 105, 70 95 Q 140 105, 140 220 Z" fill="url(#personRS)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 42 105 L 70 128 L 98 105 L 85 155 L 55 155 Z" fill="#0b0a08"/>
+    <polygon points="68,128 72,128 77,200 63,200" fill="url(#goldRS)" fill-opacity="0.6"/>
+  </g>
+
+  <!-- Linhas de conexão sutis entre sócios (rede) -->
+  <g stroke="url(#goldRS)" stroke-width="0.8" stroke-dasharray="3 4" stroke-opacity="0.3" fill="none">
+    <path d="M 220 280 Q 350 260, 510 280"/>
+    <path d="M 510 280 Q 720 265, 800 375"/>
+    <path d="M 800 375 Q 900 265, 1090 280"/>
+    <path d="M 1090 280 Q 1220 260, 1390 280"/>
+  </g>
+
+  <!-- Copos/documentos pequenos na mesa (cada sócio) -->
+  <g opacity="0.5">
+    <rect x="220" y="380" width="50" height="22" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.6"/>
+    <rect x="520" y="380" width="50" height="22" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.6"/>
+    <rect x="1030" y="380" width="50" height="22" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.6"/>
+    <rect x="1330" y="380" width="50" height="22" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Negociação contratual entre empresas">
+  <defs>
+    <linearGradient id="bgRe" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="60%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="spotRe" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#c09030" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c09030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="deskRe" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#14110b"/>
+    </linearGradient>
+    <linearGradient id="goldRe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="person" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1c15"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bgRe)"/>
+  <rect width="1600" height="500" fill="url(#spotRe)"/>
+
+  <!-- Grid de pontos sutil -->
+  <g fill="#c09030" fill-opacity="0.06">
+    <circle cx="100" cy="60" r="1"/><circle cx="250" cy="40" r="1"/><circle cx="400" cy="80" r="1"/>
+    <circle cx="550" cy="55" r="1"/><circle cx="700" cy="45" r="1"/><circle cx="900" cy="60" r="1"/>
+    <circle cx="1100" cy="40" r="1"/><circle cx="1300" cy="80" r="1"/><circle cx="1500" cy="55" r="1"/>
+  </g>
+
+  <!-- Mesa comprida -->
+  <rect x="0" y="320" width="1600" height="180" fill="url(#deskRe)"/>
+  <line x1="0" y1="320" x2="1600" y2="320" stroke="url(#goldRe)" stroke-width="1.5" stroke-opacity="0.45"/>
+  <rect x="0" y="322" width="1600" height="100" fill="url(#goldRe)" fill-opacity="0.02"/>
+
+  <!-- Silhueta pessoa esquerda -->
+  <g transform="translate(280,140)">
+    <!-- Cabeça -->
+    <circle cx="80" cy="40" r="32" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <!-- Ombros/corpo -->
+    <path d="M 10 180 Q 10 95, 80 85 Q 150 95, 150 180 Z" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <!-- Colarinho -->
+    <path d="M 55 95 L 80 115 L 105 95 L 95 140 L 65 140 Z" fill="#0b0a08"/>
+    <!-- Gravata -->
+    <polygon points="78,115 82,115 88,180 72,180" fill="url(#goldRe)" fill-opacity="0.6"/>
+    <!-- Braço estendido -->
+    <path d="M 150 130 Q 220 135, 290 160 L 300 180 Q 230 175, 155 170 Z" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+
+  <!-- Silhueta pessoa direita -->
+  <g transform="translate(1000,140)">
+    <circle cx="240" cy="40" r="32" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 170 180 Q 170 95, 240 85 Q 310 95, 310 180 Z" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M 215 95 L 240 115 L 265 95 L 255 140 L 225 140 Z" fill="#0b0a08"/>
+    <polygon points="238,115 242,115 248,180 232,180" fill="url(#goldRe)" fill-opacity="0.6"/>
+    <!-- Braço estendido -->
+    <path d="M 170 130 Q 100 135, 30 160 L 20 180 Q 95 175, 165 170 Z" fill="url(#person)" stroke="#c09030" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+
+  <!-- Aperto de mão no centro -->
+  <g transform="translate(720,260)" filter="url(#hsGlow)">
+    <defs>
+      <filter id="hsGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="3" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- Mão esquerda -->
+    <path d="M 0 20 Q 20 10, 60 15 L 90 28 Q 80 40, 60 38 L 20 35 Q 5 32, 0 20 Z"
+          fill="url(#person)" stroke="url(#goldRe)" stroke-width="1.2" stroke-opacity="0.6"/>
+    <!-- Mão direita -->
+    <path d="M 160 20 Q 140 10, 100 15 L 70 28 Q 80 40, 100 38 L 140 35 Q 155 32, 160 20 Z"
+          fill="url(#person)" stroke="url(#goldRe)" stroke-width="1.2" stroke-opacity="0.6"/>
+    <!-- Brilho do contato -->
+    <circle cx="80" cy="22" r="6" fill="url(#goldRe)" fill-opacity="0.5"/>
+    <circle cx="80" cy="22" r="14" fill="url(#goldRe)" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Documentos na mesa -->
+  <g transform="translate(600,340)">
+    <rect x="0" y="0" width="160" height="90" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.8" transform="rotate(-4)"/>
+    <g transform="rotate(-4)">
+      <line x1="12" y1="14" x2="100" y2="14" stroke="url(#goldRe)" stroke-width="1.2" opacity="0.7"/>
+      <line x1="12" y1="26" x2="140" y2="26" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="34" x2="130" y2="34" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <rect x="12" y="44" width="130" height="12" fill="#c09030" fill-opacity="0.15"/>
+      <line x1="12" y1="64" x2="140" y2="64" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="72" x2="120" y2="72" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <g transform="translate(820,350)">
+    <rect x="0" y="0" width="160" height="90" rx="2" fill="#1f1c15" stroke="#c09030" stroke-opacity="0.4" stroke-width="0.8" transform="rotate(3)"/>
+    <g transform="rotate(3)">
+      <line x1="12" y1="14" x2="100" y2="14" stroke="url(#goldRe)" stroke-width="1.2" opacity="0.7"/>
+      <line x1="12" y1="26" x2="140" y2="26" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="36" x2="130" y2="36" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="46" x2="140" y2="46" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="56" x2="120" y2="56" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+      <line x1="12" y1="66" x2="130" y2="66" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- Caneta sobre documento -->
+  <g transform="translate(880,330) rotate(15)">
+    <rect x="0" y="-2" width="80" height="4" rx="1" fill="url(#goldRe)"/>
+    <polygon points="0,0 -8,-3 -8,3" fill="#d4a84a"/>
+    <rect x="45" y="-3" width="12" height="6" fill="#0b0a08"/>
+  </g>
+</svg>

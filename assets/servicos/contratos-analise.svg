@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Análise técnica de contrato empresarial com lupa">
+  <defs>
+    <radialGradient id="bgC" cx="40%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#2a221a"/>
+      <stop offset="55%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </radialGradient>
+    <linearGradient id="goldC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="50%" stop-color="#d4a84a"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="paperC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1c15"/>
+      <stop offset="100%" stop-color="#141109"/>
+    </linearGradient>
+    <pattern id="dotsC" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#c09030" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="glowC">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgC)"/>
+  <rect width="800" height="600" fill="url(#dotsC)"/>
+
+  <!-- Glow de destaque -->
+  <circle cx="400" cy="300" r="280" fill="url(#goldC)" fill-opacity="0.03"/>
+
+  <!-- Documento principal -->
+  <g transform="translate(180,80)">
+    <!-- Sombra -->
+    <rect x="12" y="14" width="360" height="470" rx="6" fill="#000" fill-opacity="0.55"/>
+    <!-- Papel -->
+    <rect x="0" y="0" width="360" height="470" rx="6" fill="url(#paperC)" stroke="#c09030" stroke-opacity="0.35" stroke-width="1"/>
+
+    <!-- Título do contrato -->
+    <rect x="30" y="36" width="200" height="6" rx="2" fill="url(#goldC)"/>
+    <rect x="30" y="52" width="140" height="3" rx="1.5" fill="#a09880" fill-opacity="0.5"/>
+
+    <!-- Seção 1 -->
+    <text x="30" y="94" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="10" font-weight="600" letter-spacing="1.5">CLÁUSULA 1ª</text>
+    <g fill="#a09880" fill-opacity="0.42">
+      <rect x="30" y="108" width="290" height="2.5" rx="1"/>
+      <rect x="30" y="120" width="280" height="2.5" rx="1"/>
+      <rect x="30" y="132" width="270" height="2.5" rx="1"/>
+    </g>
+
+    <!-- Seção 2 — cláusula penal (em destaque) -->
+    <text x="30" y="166" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="10" font-weight="600" letter-spacing="1.5">CLÁUSULA PENAL</text>
+    <rect x="22" y="176" width="316" height="80" rx="4" fill="#c09030" fill-opacity="0.14"/>
+    <rect x="22" y="176" width="3" height="80" fill="url(#goldC)"/>
+    <g fill="#d4a84a" fill-opacity="0.9">
+      <rect x="30" y="188" width="290" height="3" rx="1.5"/>
+      <rect x="30" y="202" width="275" height="3" rx="1.5"/>
+      <rect x="30" y="216" width="260" height="3" rx="1.5"/>
+      <rect x="30" y="230" width="240" height="3" rx="1.5"/>
+      <rect x="30" y="244" width="200" height="3" rx="1.5"/>
+    </g>
+
+    <!-- Seção 3 -->
+    <text x="30" y="286" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="10" font-weight="600" letter-spacing="1.5">CLÁUSULA 3ª</text>
+    <g fill="#a09880" fill-opacity="0.42">
+      <rect x="30" y="300" width="290" height="2.5" rx="1"/>
+      <rect x="30" y="312" width="270" height="2.5" rx="1"/>
+      <rect x="30" y="324" width="280" height="2.5" rx="1"/>
+      <rect x="30" y="336" width="250" height="2.5" rx="1"/>
+    </g>
+
+    <!-- Seção 4 -->
+    <text x="30" y="368" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="10" font-weight="600" letter-spacing="1.5">CLÁUSULA 4ª</text>
+    <g fill="#a09880" fill-opacity="0.42">
+      <rect x="30" y="382" width="280" height="2.5" rx="1"/>
+      <rect x="30" y="394" width="270" height="2.5" rx="1"/>
+      <rect x="30" y="406" width="260" height="2.5" rx="1"/>
+    </g>
+
+    <!-- Linhas de assinatura -->
+    <line x1="40" y1="438" x2="150" y2="438" stroke="#a09880" stroke-opacity="0.45" stroke-width="1"/>
+    <line x1="220" y1="438" x2="330" y2="438" stroke="#a09880" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="95" y="452" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="6" letter-spacing="1" opacity="0.6">CONTRATANTE</text>
+    <text x="275" y="452" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="6" letter-spacing="1" opacity="0.6">CONTRATADA</text>
+  </g>
+
+  <!-- Lupa em destaque sobre a cláusula penal -->
+  <g transform="translate(510,225)" filter="url(#glowC)">
+    <!-- Cabo -->
+    <line x1="72" y1="72" x2="128" y2="128" stroke="url(#goldC)" stroke-width="8" stroke-linecap="round" stroke-opacity="0.9"/>
+    <line x1="72" y1="72" x2="128" y2="128" stroke="#1a1812" stroke-width="4" stroke-linecap="round"/>
+    <!-- Aro externo -->
+    <circle cx="50" cy="50" r="52" fill="none" stroke="url(#goldC)" stroke-width="5" stroke-opacity="0.85"/>
+    <circle cx="50" cy="50" r="52" fill="#0b0a08" fill-opacity="0.35"/>
+    <!-- Aro interno -->
+    <circle cx="50" cy="50" r="47" fill="none" stroke="#c09030" stroke-width="1" stroke-opacity="0.4"/>
+    <!-- Conteúdo ampliado -->
+    <g clip-path="inset(0 round 47px)">
+      <text x="50" y="42" text-anchor="middle" fill="#e8c870" font-family="'Playfair Display', serif" font-size="7" font-weight="700" letter-spacing="1.2">PENAL</text>
+      <rect x="20" y="50" width="60" height="2" rx="1" fill="#e8c870"/>
+      <rect x="20" y="58" width="50" height="2" rx="1" fill="#e8c870" opacity="0.8"/>
+      <rect x="20" y="66" width="55" height="2" rx="1" fill="#e8c870" opacity="0.6"/>
+    </g>
+    <!-- Reflexo do vidro -->
+    <path d="M 25 30 Q 35 20, 45 25" stroke="#fff" stroke-width="1.2" fill="none" stroke-opacity="0.3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Highlight pen stroke (marca-texto) -->
+  <g transform="translate(220,310)">
+    <rect x="-10" y="-4" width="340" height="14" fill="url(#goldC)" fill-opacity="0.18" transform="rotate(-1)"/>
+  </g>
+</svg>

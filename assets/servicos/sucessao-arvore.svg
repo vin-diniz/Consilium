@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Árvore de sucessão patrimonial com fundador, herdeiros e holdings familiares">
+  <defs>
+    <linearGradient id="bgAV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="60%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="spotAV" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#c09030" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c09030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldAV" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="nodeFillAV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1c15"/>
+      <stop offset="100%" stop-color="#141109"/>
+    </linearGradient>
+    <filter id="glowAV">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="420" fill="url(#bgAV)"/>
+  <rect width="1600" height="420" fill="url(#spotAV)"/>
+
+  <!-- Grid -->
+  <g fill="#c09030" fill-opacity="0.06">
+    <circle cx="80" cy="50" r="1"/><circle cx="280" cy="40" r="1"/><circle cx="480" cy="60" r="1"/>
+    <circle cx="680" cy="50" r="1"/><circle cx="880" cy="45" r="1"/><circle cx="1080" cy="55" r="1"/>
+    <circle cx="1280" cy="40" r="1"/><circle cx="1480" cy="60" r="1"/>
+  </g>
+
+  <!-- Linhas de conexão: fundador → herdeiros -->
+  <g stroke="url(#goldAV)" stroke-width="1.5" stroke-opacity="0.55" fill="none">
+    <path d="M 800 115 L 800 165 L 400 165 L 400 210"/>
+    <path d="M 800 115 L 800 165 L 667 165 L 667 210"/>
+    <path d="M 800 115 L 800 165 L 933 165 L 933 210"/>
+    <path d="M 800 115 L 800 165 L 1200 165 L 1200 210"/>
+  </g>
+
+  <!-- Rótulos das conexões (quotas) -->
+  <g fill="#d4a84a" fill-opacity="0.75" font-family="sans-serif" font-size="9" letter-spacing="1" text-anchor="middle">
+    <text x="400" y="190">25%</text>
+    <text x="667" y="190">25%</text>
+    <text x="933" y="190">25%</text>
+    <text x="1200" y="190">25%</text>
+  </g>
+
+  <!-- Conexões herdeiros → empresas controladas -->
+  <g stroke="url(#goldAV)" stroke-width="1" stroke-opacity="0.3" fill="none" stroke-dasharray="3 3">
+    <path d="M 400 285 L 400 325"/>
+    <path d="M 667 285 L 667 325"/>
+    <path d="M 933 285 L 933 325"/>
+    <path d="M 1200 285 L 1200 325"/>
+  </g>
+
+  <!-- FUNDADOR (nó principal no topo) -->
+  <g transform="translate(680,40)" filter="url(#glowAV)">
+    <rect x="0" y="0" width="240" height="75" rx="8" fill="url(#nodeFillAV)" stroke="url(#goldAV)" stroke-width="2" stroke-opacity="0.9"/>
+    <rect x="0" y="0" width="240" height="4" fill="url(#goldAV)"/>
+    <text x="120" y="28" text-anchor="middle" fill="#e8c870" font-family="'Playfair Display', serif" font-size="14" font-weight="700" letter-spacing="2.5">FUNDADOR</text>
+    <text x="120" y="46" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="9" letter-spacing="1.5" opacity="0.75">USUFRUTO VITALÍCIO</text>
+    <!-- Ícone: coroa/legado -->
+    <g transform="translate(108,52)" stroke="url(#goldAV)" stroke-width="1.2" fill="none">
+      <path d="M 0 10 L 4 0 L 8 8 L 12 2 L 16 8 L 20 0 L 24 10 Z"/>
+      <line x1="0" y1="14" x2="24" y2="14" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- HERDEIRO 1 · Filha -->
+  <g transform="translate(320,210)">
+    <rect x="0" y="0" width="160" height="75" rx="6" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="1.3" stroke-opacity="0.7"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.3">HERDEIRA 1</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">NUA-PROPRIEDADE</text>
+    <rect x="24" y="52" width="112" height="12" rx="2" fill="#c09030" fill-opacity="0.15"/>
+  </g>
+
+  <!-- HERDEIRO 2 -->
+  <g transform="translate(587,210)">
+    <rect x="0" y="0" width="160" height="75" rx="6" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="1.3" stroke-opacity="0.7"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.3">HERDEIRO 2</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">NUA-PROPRIEDADE</text>
+    <rect x="24" y="52" width="112" height="12" rx="2" fill="#c09030" fill-opacity="0.15"/>
+  </g>
+
+  <!-- HERDEIRO 3 -->
+  <g transform="translate(853,210)">
+    <rect x="0" y="0" width="160" height="75" rx="6" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="1.3" stroke-opacity="0.7"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.3">HERDEIRO 3</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">NUA-PROPRIEDADE</text>
+    <rect x="24" y="52" width="112" height="12" rx="2" fill="#c09030" fill-opacity="0.15"/>
+  </g>
+
+  <!-- HERDEIRA 4 -->
+  <g transform="translate(1120,210)">
+    <rect x="0" y="0" width="160" height="75" rx="6" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="1.3" stroke-opacity="0.7"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.3">HERDEIRA 4</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">NUA-PROPRIEDADE</text>
+    <rect x="24" y="52" width="112" height="12" rx="2" fill="#c09030" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Controladas (camada inferior — pequenas) -->
+  <g fill-opacity="0.5">
+    <rect x="360" y="325" width="80" height="32" rx="3" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.55"/>
+    <text x="400" y="345" text-anchor="middle" fill="#d4a84a" font-family="sans-serif" font-size="9" letter-spacing="1" opacity="0.9">HOLDING</text>
+
+    <rect x="627" y="325" width="80" height="32" rx="3" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.55"/>
+    <text x="667" y="345" text-anchor="middle" fill="#d4a84a" font-family="sans-serif" font-size="9" letter-spacing="1" opacity="0.9">HOLDING</text>
+
+    <rect x="893" y="325" width="80" height="32" rx="3" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.55"/>
+    <text x="933" y="345" text-anchor="middle" fill="#d4a84a" font-family="sans-serif" font-size="9" letter-spacing="1" opacity="0.9">HOLDING</text>
+
+    <rect x="1160" y="325" width="80" height="32" rx="3" fill="url(#nodeFillAV)" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.55"/>
+    <text x="1200" y="345" text-anchor="middle" fill="#d4a84a" font-family="sans-serif" font-size="9" letter-spacing="1" opacity="0.9">HOLDING</text>
+  </g>
+
+  <!-- Label inferior -->
+  <text x="800" y="395" text-anchor="middle" fill="#a09880" fill-opacity="0.55" font-family="sans-serif" font-size="10" letter-spacing="3">DOAÇÃO COM RESERVA DE USUFRUTO · SUCESSÃO SEM INVENTÁRIO LITIGIOSO</text>
+</svg>

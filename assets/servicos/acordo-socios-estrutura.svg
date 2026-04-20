@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Organograma de holding patrimonial com empresas controladas">
+  <defs>
+    <linearGradient id="bgE" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="60%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="spotE" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#c09030" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c09030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldE" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+    <linearGradient id="nodeFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1c15"/>
+      <stop offset="100%" stop-color="#141109"/>
+    </linearGradient>
+    <filter id="glowE">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="420" fill="url(#bgE)"/>
+  <rect width="1600" height="420" fill="url(#spotE)"/>
+
+  <!-- Grid sutil -->
+  <g fill="#c09030" fill-opacity="0.07">
+    <circle cx="100" cy="60" r="1"/><circle cx="300" cy="40" r="1"/><circle cx="500" cy="70" r="1"/>
+    <circle cx="800" cy="50" r="1"/><circle cx="1100" cy="45" r="1"/><circle cx="1300" cy="60" r="1"/>
+    <circle cx="200" cy="380" r="1"/><circle cx="1400" cy="370" r="1"/>
+  </g>
+
+  <!-- Linhas de conexão da holding às controladas -->
+  <g stroke="url(#goldE)" stroke-width="1.5" stroke-opacity="0.55" fill="none">
+    <!-- Saindo do centro-topo da Holding para as 4 controladas -->
+    <path d="M 800 150 L 800 210 L 400 210 L 400 260"/>
+    <path d="M 800 150 L 800 210 L 667 210 L 667 260"/>
+    <path d="M 800 150 L 800 210 L 933 210 L 933 260"/>
+    <path d="M 800 150 L 800 210 L 1200 210 L 1200 260"/>
+  </g>
+
+  <!-- Rótulos das conexões (%) -->
+  <g fill="#d4a84a" fill-opacity="0.7" font-family="sans-serif" font-size="9" letter-spacing="1" text-anchor="middle">
+    <text x="400" y="235">100%</text>
+    <text x="667" y="235">100%</text>
+    <text x="933" y="235">80%</text>
+    <text x="1200" y="235">100%</text>
+  </g>
+
+  <!-- HOLDING (nó principal no topo) -->
+  <g transform="translate(680,55)" filter="url(#glowE)">
+    <rect x="0" y="0" width="240" height="95" rx="8" fill="url(#nodeFill)" stroke="url(#goldE)" stroke-width="2" stroke-opacity="0.9"/>
+    <rect x="0" y="0" width="240" height="4" fill="url(#goldE)"/>
+    <text x="120" y="32" text-anchor="middle" fill="#e8c870" font-family="'Playfair Display', serif" font-size="14" font-weight="700" letter-spacing="2.5">HOLDING</text>
+    <text x="120" y="50" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="9" letter-spacing="1.5" opacity="0.75">PATRIMONIAL · FAMILIAR</text>
+    <!-- Ícone escudo -->
+    <g transform="translate(108,60)" stroke="url(#goldE)" stroke-width="1.3" fill="none">
+      <path d="M 12 0 L 0 6 v 8 c 0 7, 5 12, 12 14 c 7 -2, 12 -7, 12 -14 V 6 Z"/>
+      <path d="M 7 12 l 3 3 l 7 -7" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Controlada 1 · Operacional -->
+  <g transform="translate(320,260)">
+    <rect x="0" y="0" width="160" height="85" rx="6" fill="url(#nodeFill)" stroke="#c09030" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.5">OPERACIONAL</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">LTDA</text>
+    <rect x="24" y="55" width="112" height="14" rx="2" fill="#c09030" fill-opacity="0.15"/>
+    <line x1="32" y1="62" x2="128" y2="62" stroke="#d4a84a" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Controlada 2 · Imobiliária -->
+  <g transform="translate(587,260)">
+    <rect x="0" y="0" width="160" height="85" rx="6" fill="url(#nodeFill)" stroke="#c09030" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.5">IMOBILIÁRIA</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">LTDA</text>
+    <rect x="24" y="55" width="112" height="14" rx="2" fill="#c09030" fill-opacity="0.15"/>
+    <line x1="32" y1="62" x2="128" y2="62" stroke="#d4a84a" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Controlada 3 · Investimentos -->
+  <g transform="translate(853,260)">
+    <rect x="0" y="0" width="160" height="85" rx="6" fill="url(#nodeFill)" stroke="#c09030" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.5">INVESTIMENTOS</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">LTDA</text>
+    <rect x="24" y="55" width="112" height="14" rx="2" fill="#c09030" fill-opacity="0.15"/>
+    <line x1="32" y1="62" x2="128" y2="62" stroke="#d4a84a" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Controlada 4 · Participações -->
+  <g transform="translate(1120,260)">
+    <rect x="0" y="0" width="160" height="85" rx="6" fill="url(#nodeFill)" stroke="#c09030" stroke-width="1.2" stroke-opacity="0.6"/>
+    <text x="80" y="26" text-anchor="middle" fill="#d4a84a" font-family="'Playfair Display', serif" font-size="11" font-weight="600" letter-spacing="1.5">PARTICIPAÇÕES</text>
+    <text x="80" y="42" text-anchor="middle" fill="#a09880" font-family="sans-serif" font-size="8" letter-spacing="1" opacity="0.7">S.A.</text>
+    <rect x="24" y="55" width="112" height="14" rx="2" fill="#c09030" fill-opacity="0.15"/>
+    <line x1="32" y1="62" x2="128" y2="62" stroke="#d4a84a" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Base label -->
+  <text x="800" y="400" text-anchor="middle" fill="#a09880" fill-opacity="0.55" font-family="sans-serif" font-size="10" letter-spacing="3">ESTRUTURAÇÃO SOCIETÁRIA · SUCESSÃO PROTEGIDA</text>
+</svg>

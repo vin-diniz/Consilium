@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mesa de trabalho com laptop e documentos empresariais">
+  <defs>
+    <linearGradient id="bgR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1610"/>
+      <stop offset="60%" stop-color="#14110b"/>
+      <stop offset="100%" stop-color="#0b0a08"/>
+    </linearGradient>
+    <radialGradient id="spotR" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#c09030" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#c09030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#14110b"/>
+    </linearGradient>
+    <linearGradient id="goldR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8c870"/>
+      <stop offset="100%" stop-color="#c09030"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="420" fill="url(#bgR)"/>
+  <rect width="1600" height="420" fill="url(#spotR)"/>
+
+  <!-- Grid de pontos sutil -->
+  <g fill="#c09030" fill-opacity="0.07">
+    <circle cx="80" cy="60" r="1"/><circle cx="200" cy="40" r="1"/><circle cx="350" cy="70" r="1"/>
+    <circle cx="500" cy="50" r="1"/><circle cx="650" cy="80" r="1"/><circle cx="800" cy="45" r="1"/>
+    <circle cx="1000" cy="65" r="1"/><circle cx="1200" cy="40" r="1"/><circle cx="1400" cy="75" r="1"/>
+    <circle cx="120" cy="180" r="1"/><circle cx="280" cy="160" r="1"/><circle cx="420" cy="195" r="1"/>
+    <circle cx="1100" cy="170" r="1"/><circle cx="1300" cy="185" r="1"/><circle cx="1480" cy="165" r="1"/>
+  </g>
+
+  <!-- Mesa -->
+  <rect x="0" y="280" width="1600" height="140" fill="url(#deskGrad)"/>
+  <line x1="0" y1="280" x2="1600" y2="280" stroke="url(#goldR)" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Reflexo da mesa -->
+  <rect x="0" y="282" width="1600" height="80" fill="url(#goldR)" fill-opacity="0.015"/>
+
+  <!-- Documentos empilhados à esquerda -->
+  <g transform="translate(180,230)">
+    <rect x="6" y="6" width="180" height="45" fill="#0b0a08" fill-opacity="0.6"/>
+    <rect x="0" y="0" width="180" height="45" rx="2" fill="#1f1c15" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.4" transform="rotate(-4)"/>
+    <rect x="0" y="0" width="180" height="45" rx="2" fill="#1f1c15" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="16" y1="12" x2="140" y2="12" stroke="url(#goldR)" stroke-width="1.2" opacity="0.7"/>
+    <line x1="16" y1="22" x2="150" y2="22" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <line x1="16" y1="30" x2="130" y2="30" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+  </g>
+
+  <!-- Laptop no centro -->
+  <g transform="translate(620,120)">
+    <!-- Tela aberta (trapezoidal) -->
+    <polygon points="20,0 340,0 360,180 0,180" fill="#14110b" stroke="url(#goldR)" stroke-width="1.2" stroke-opacity="0.7"/>
+    <!-- Área de display -->
+    <polygon points="30,12 330,12 348,168 12,168" fill="url(#goldR)" fill-opacity="0.18"/>
+    <!-- Janelinhas da UI -->
+    <rect x="48" y="30" width="90" height="60" rx="2" fill="#c09030" fill-opacity="0.35"/>
+    <rect x="150" y="30" width="90" height="60" rx="2" fill="#c09030" fill-opacity="0.22"/>
+    <rect x="252" y="30" width="78" height="60" rx="2" fill="#c09030" fill-opacity="0.28"/>
+    <g fill="#d4a84a" opacity="0.8">
+      <rect x="58" y="105" width="80" height="3" rx="1"/>
+      <rect x="58" y="115" width="120" height="3" rx="1"/>
+      <rect x="58" y="125" width="100" height="3" rx="1"/>
+      <rect x="58" y="140" width="140" height="3" rx="1"/>
+      <rect x="58" y="150" width="90" height="3" rx="1"/>
+    </g>
+
+    <!-- Base do laptop -->
+    <polygon points="-20,180 380,180 410,205 -50,205" fill="#1f1c15" stroke="url(#goldR)" stroke-width="1" stroke-opacity="0.4"/>
+    <!-- Touchpad -->
+    <rect x="140" y="188" width="100" height="5" rx="1" fill="#0b0a08"/>
+  </g>
+
+  <!-- Caneca de café à direita -->
+  <g transform="translate(1150,200)">
+    <!-- Corpo da xícara -->
+    <path d="M 0 30 L 0 90 Q 0 100 10 100 L 60 100 Q 70 100 70 90 L 70 30 Z" fill="#1f1c15" stroke="url(#goldR)" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- Alça -->
+    <path d="M 70 50 Q 92 50 92 70 Q 92 88 70 88" fill="none" stroke="url(#goldR)" stroke-width="1.5" stroke-opacity="0.6"/>
+    <!-- Café (topo) -->
+    <ellipse cx="35" cy="30" rx="35" ry="4" fill="#c09030" fill-opacity="0.4"/>
+    <!-- Vapor -->
+    <path d="M 20 15 Q 25 5, 20 -5 Q 15 -15, 25 -25" stroke="#d4a84a" stroke-width="1" stroke-opacity="0.4" fill="none" stroke-linecap="round"/>
+    <path d="M 40 15 Q 45 0, 40 -12 Q 35 -22, 45 -32" stroke="#d4a84a" stroke-width="1" stroke-opacity="0.35" fill="none" stroke-linecap="round"/>
+    <path d="M 55 15 Q 60 5, 55 -5 Q 50 -15, 60 -22" stroke="#d4a84a" stroke-width="1" stroke-opacity="0.3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Papel com cláusula à direita do laptop -->
+  <g transform="translate(1320,240) rotate(6)">
+    <rect x="6" y="6" width="160" height="110" fill="#0b0a08" fill-opacity="0.6"/>
+    <rect x="0" y="0" width="160" height="110" rx="2" fill="#1f1c15" stroke="#c09030" stroke-width="0.8" stroke-opacity="0.5"/>
+    <line x1="12" y1="18" x2="100" y2="18" stroke="url(#goldR)" stroke-width="1.5" opacity="0.7"/>
+    <line x1="12" y1="32" x2="140" y2="32" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <line x1="12" y1="42" x2="130" y2="42" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <rect x="12" y="50" width="130" height="14" fill="#c09030" fill-opacity="0.15"/>
+    <line x1="12" y1="72" x2="140" y2="72" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <line x1="12" y1="82" x2="120" y2="82" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+    <line x1="12" y1="92" x2="100" y2="92" stroke="#a09880" stroke-opacity="0.4" stroke-width="0.8"/>
+  </g>
+</svg>

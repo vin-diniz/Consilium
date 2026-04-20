@@ -26,6 +26,20 @@
   </url>
 
   <url>
+    <loc>https://consiliumhub.com.br/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/blog.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:title>Blog Consilium — Inteligência Jurídica para PMEs</image:title>
+      <image:caption>Artigos educacionais sobre Direito Civil Empresarial aplicados à realidade de pequenas e médias empresas</image:caption>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://consiliumhub.com.br/sobre.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/sobre.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/sobre.html"/>
@@ -49,7 +63,49 @@
     <image:image>
       <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
       <image:title>Cobrança Empresarial — Recuperação de Crédito para PMEs</image:title>
-      <image:caption>Guia 5W2H do serviço de cobrança empresarial especializado: ação executiva, ação monitória, pesquisa patrimonial e penhora online via Sisbajud</image:caption>
+      <image:caption>Serviço de cobrança empresarial especializado: ação executiva, ação monitória, pesquisa patrimonial e penhora online via Sisbajud</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:title>Revisão de Contratos Empresariais — Blindagem Contratual para PMEs</image:title>
+      <image:caption>Serviço de elaboração, revisão técnica e assessoria em contratos comerciais, acordos de sócios, NDAs e contratos de distribuição</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:title>Acordo de Sócios e Estruturação Societária — Direito Societário para PMEs</image:title>
+      <image:caption>Serviço de Direito Societário para PMEs: elaboração de acordo de sócios, contrato social, alteração contratual, estruturação societária e holding patrimonial</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:title>Planejamento Sucessório Empresarial — Holding Familiar para PMEs</image:title>
+      <image:caption>Serviço de planejamento sucessório empresarial: holding familiar, doação com reserva de usufruto, protocolo familiar e governança para PMEs</image:caption>
     </image:image>
   </url>
 
