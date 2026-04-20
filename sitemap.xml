@@ -40,6 +40,114 @@
   </url>
 
   <url>
+    <loc>https://consiliumhub.com.br/blog/categoria/cobranca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/cobranca.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/categoria/contratos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/contratos.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/categoria/societario.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/societario.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/categoria/sucessao.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/sucessao.html"/>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════════
+       ARTIGOS INDIVIDUAIS DO BLOG
+  ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/cobranca-empresarial-como-recuperar-credito.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/cobranca-empresarial-como-recuperar-credito.html"/>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/cobranca-documentacao.svg</image:loc>
+      <image:title>Cobrança empresarial: como recuperar crédito sem perder cliente</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/prazos-prescricionais-creditos-empresariais.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/prazos-prescricionais-creditos-empresariais.html"/>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/cobranca-reuniao.svg</image:loc>
+      <image:title>Prazos prescricionais: os créditos que você não pode perder de vista</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/clausulas-essenciais-contratos-b2b.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/clausulas-essenciais-contratos-b2b.html"/>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/contratos-analise.svg</image:loc>
+      <image:title>Três cláusulas que todo contrato B2B deveria ter</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/modelo-de-contrato-internet-nao-protege.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/modelo-de-contrato-internet-nao-protege.html"/>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/contratos-reuniao.svg</image:loc>
+      <image:title>Modelo de contrato da internet não protege sua empresa</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/apuracao-de-haveres-como-funciona.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/apuracao-de-haveres-como-funciona.html"/>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/acordo-socios-analise.svg</image:loc>
+      <image:title>Apuração de haveres: como funciona quando um sócio sai da empresa</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://consiliumhub.com.br/blog/holding-familiar-quando-estruturar.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/holding-familiar-quando-estruturar.html"/>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://consiliumhub.com.br/assets/servicos/sucessao-analise.svg</image:loc>
+      <image:title>Holding familiar: quando faz sentido estruturar</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://consiliumhub.com.br/sobre.html</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/sobre.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/sobre.html"/>
