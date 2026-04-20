@@ -3177,3 +3177,170 @@ a.blog-card__category:hover { color: var(--gold-pale); }
     transform: none;
   }
 }
+
+
+/* ═══════════════════════════════════════════════════════
+   LOCATIONS ACCORDION — Atuação por cidade (SEO programático)
+   ═══════════════════════════════════════════════════════ */
+.locations-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 920px;
+  margin: 48px auto 0;
+}
+
+.locations-accordion__item {
+  background: linear-gradient(180deg, rgba(192, 144, 48, 0.04), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(192, 144, 48, 0.22);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.28s ease, box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.locations-accordion__item:hover {
+  border-color: rgba(192, 144, 48, 0.48);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+}
+
+.locations-accordion__item[open] {
+  border-color: rgba(192, 144, 48, 0.55);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.32);
+}
+
+.locations-accordion__summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 28px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  font-family: var(--font-heading, 'Playfair Display'), serif;
+  transition: background 0.24s ease;
+}
+
+.locations-accordion__summary::-webkit-details-marker { display: none; }
+.locations-accordion__summary::marker { display: none; content: ''; }
+
+.locations-accordion__summary:hover {
+  background: rgba(192, 144, 48, 0.05);
+}
+
+.locations-accordion__uf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 36px;
+  padding: 0 12px;
+  background: linear-gradient(135deg, #C09030, #A67722);
+  color: #0B0A08;
+  font-family: var(--font-body, 'Inter'), sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.locations-accordion__state {
+  flex: 1;
+  color: #F4EFE4;
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+.locations-accordion__count {
+  color: rgba(244, 239, 228, 0.55);
+  font-family: var(--font-body, 'Inter'), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.locations-accordion__chevron {
+  color: #C09030;
+  flex-shrink: 0;
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.locations-accordion__item[open] .locations-accordion__chevron {
+  transform: rotate(180deg);
+}
+
+.locations-accordion__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 28px 26px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(192, 144, 48, 0.18);
+  padding-top: 18px;
+}
+
+.locations-accordion__list li {
+  margin: 0;
+  padding: 0;
+}
+
+.locations-accordion__list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  color: rgba(244, 239, 228, 0.82);
+  font-family: var(--font-body, 'Inter'), sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.locations-accordion__list a::before {
+  content: '→';
+  color: #C09030;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.locations-accordion__list a:hover {
+  background: rgba(192, 144, 48, 0.08);
+  color: #F4EFE4;
+}
+
+.locations-accordion__list a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.locations-accordion__list a:focus-visible {
+  outline: 2px solid #C09030;
+  outline-offset: 2px;
+  background: rgba(192, 144, 48, 0.1);
+  color: #F4EFE4;
+}
+
+@media (max-width: 768px) {
+  .locations-accordion__summary { padding: 18px 20px; gap: 14px; }
+  .locations-accordion__list { grid-template-columns: 1fr; padding: 14px 20px 22px; }
+  .locations-accordion__state { font-size: 19px; }
+  .locations-accordion__count { font-size: 11px; }
+  .locations-accordion__uf { min-width: 44px; height: 30px; font-size: 12px; }
+  .locations-accordion__list a { font-size: 14px; padding: 10px 10px; }
+}
+
+@media (max-width: 480px) {
+  .locations-accordion__count { display: none; }
+}
