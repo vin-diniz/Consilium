@@ -205,7 +205,7 @@ phoneInput?.addEventListener('input', function () {
 });
 
 
-/* ── CONTACT FORM ────────────────────────────────────── */
+/* ── CONTACT FORM (Web3Forms) ────────────────────────── */
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
@@ -214,6 +214,7 @@ form?.addEventListener('submit', async (e) => {
   if (!validateForm()) return;
 
   const btn = form.querySelector('button[type="submit"]');
+  const originalBtnHTML = btn.innerHTML;
 
   btn.disabled = true;
   btn.innerHTML = `
@@ -223,29 +224,35 @@ form?.addEventListener('submit', async (e) => {
     Enviando...
   `;
 
-  // Collect lead data
-  const data = {
-    name:    form.name.value.trim(),
-    company: form.company.value.trim(),
-    phone:   form.phone.value.trim(),
-    issue:   form.issue.value,
-    source:  window.location.href,
-    date:    new Date().toISOString(),
-  };
+  // Anexa metadados uteis ao payload
+  const payload = new FormData(form);
+  payload.append('page_url', window.location.href);
+  payload.append('user_agent', navigator.userAgent);
+  payload.append('submitted_at', new Date().toISOString());
 
-  // In production, replace this with your actual endpoint / webhook
-  await simulateSend(data);
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: payload,
+      headers: { 'Accept': 'application/json' },
+    });
+    const json = await res.json().catch(() => ({}));
 
-  form.hidden = true;
-  formSuccess.hidden = false;
-  formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    if (res.ok && json.success) {
+      form.hidden = true;
+      formSuccess.hidden = false;
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      form.reset();
+    } else {
+      throw new Error(json.message || 'Falha no envio');
+    }
+  } catch (err) {
+    console.error('[Consilium] Erro no envio:', err);
+    alert('Não foi possível enviar agora. Tente novamente em instantes ou escreva para acesso@consiliumadvogados.com.br.');
+    btn.disabled = false;
+    btn.innerHTML = originalBtnHTML;
+  }
 });
-
-async function simulateSend(data) {
-  // Replace with: await fetch('/api/leads', { method:'POST', body: JSON.stringify(data), headers:{'Content-Type':'application/json'} })
-  console.info('[Consilium] Lead capturado:', data);
-  return new Promise(resolve => setTimeout(resolve, 900));
-}
 
 function validateForm() {
   let valid = true;

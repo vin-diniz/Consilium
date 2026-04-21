@@ -1274,8 +1274,16 @@
           </div>
 
           <div class="contact__form-wrap reveal">
-            <form class="contact__form" id="contactForm" novalidate>
+            <form class="contact__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
               <h3 class="contact__form-title">Solicitar Diagnóstico Estratégico</h3>
+
+              <!-- Web3Forms — config invisivel -->
+              <input type="hidden" name="access_key" value="9bc9a26e-1022-4ce7-9122-f650af981c46">
+              <input type="hidden" name="subject" value="Novo Diagnóstico — Consilium (consiliumadvogados.com.br)">
+              <input type="hidden" name="from_name" value="Consilium | Site">
+              <input type="hidden" name="redirect" value="false">
+              <!-- Honeypot anti-spam: campo invisivel que humanos nao preenchem -->
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
               <div class="form-group">
                 <label class="form-label" for="name">Seu nome / Cargo *</label>
