@@ -104,7 +104,7 @@ User-agent: TelegramBot
 Allow: /
 
 # ─── SITEMAP ───────────────────────────────────────────
-Sitemap: https://consiliumadvogados.com.br/sitemap.xml
+Sitemap: https://www.consiliumadvogados.com.br/sitemap.xml
 
 # ─── HOST CANÔNICO ─────────────────────────────────────
-Host: https://consiliumadvogados.com.br
+Host: https://www.consiliumadvogados.com.br
