@@ -12,60 +12,60 @@
   ═══════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://consiliumhub.com.br/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/"/>
+    <loc>https://consiliumadvogados.com.br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Consilium — Advocacia Empresarial para PMEs</image:title>
       <image:caption>Advocacia empresarial especializada em Direito Civil Empresarial para pequenas e médias empresas</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/blog.html"/>
+    <loc>https://consiliumadvogados.com.br/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/blog.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Blog Consilium — Inteligência Jurídica para PMEs</image:title>
       <image:caption>Artigos educacionais sobre Direito Civil Empresarial aplicados à realidade de pequenas e médias empresas</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/categoria/cobranca.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/cobranca.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/categoria/cobranca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/categoria/cobranca.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/categoria/contratos.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/contratos.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/categoria/contratos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/categoria/contratos.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/categoria/societario.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/societario.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/categoria/societario.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/categoria/societario.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/categoria/sucessao.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/categoria/sucessao.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/categoria/sucessao.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/categoria/sucessao.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -76,142 +76,142 @@
   ═══════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/cobranca-empresarial-como-recuperar-credito.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/cobranca-empresarial-como-recuperar-credito.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/cobranca-empresarial-como-recuperar-credito.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/cobranca-empresarial-como-recuperar-credito.html"/>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/cobranca-documentacao.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/cobranca-documentacao.svg</image:loc>
       <image:title>Cobrança empresarial: como recuperar crédito sem perder cliente</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/prazos-prescricionais-creditos-empresariais.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/prazos-prescricionais-creditos-empresariais.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/prazos-prescricionais-creditos-empresariais.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/prazos-prescricionais-creditos-empresariais.html"/>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/cobranca-reuniao.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/cobranca-reuniao.svg</image:loc>
       <image:title>Prazos prescricionais: os créditos que você não pode perder de vista</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/clausulas-essenciais-contratos-b2b.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/clausulas-essenciais-contratos-b2b.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/clausulas-essenciais-contratos-b2b.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/clausulas-essenciais-contratos-b2b.html"/>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/contratos-analise.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/contratos-analise.svg</image:loc>
       <image:title>Três cláusulas que todo contrato B2B deveria ter</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/modelo-de-contrato-internet-nao-protege.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/modelo-de-contrato-internet-nao-protege.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/modelo-de-contrato-internet-nao-protege.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/modelo-de-contrato-internet-nao-protege.html"/>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/contratos-reuniao.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/contratos-reuniao.svg</image:loc>
       <image:title>Modelo de contrato da internet não protege sua empresa</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/apuracao-de-haveres-como-funciona.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/apuracao-de-haveres-como-funciona.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/apuracao-de-haveres-como-funciona.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/apuracao-de-haveres-como-funciona.html"/>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/acordo-socios-analise.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/acordo-socios-analise.svg</image:loc>
       <image:title>Apuração de haveres: como funciona quando um sócio sai da empresa</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/blog/holding-familiar-quando-estruturar.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/blog/holding-familiar-quando-estruturar.html"/>
+    <loc>https://consiliumadvogados.com.br/blog/holding-familiar-quando-estruturar.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/blog/holding-familiar-quando-estruturar.html"/>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/servicos/sucessao-analise.svg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/servicos/sucessao-analise.svg</image:loc>
       <image:title>Holding familiar: quando faz sentido estruturar</image:title>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/sobre.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/sobre.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/sobre.html"/>
+    <loc>https://consiliumadvogados.com.br/sobre.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/sobre.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/sobre.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Sobre a Consilium — Hub que Conecta PMEs a Escritórios Parceiros</image:title>
       <image:caption>Como a Consilium faz o diagnóstico jurídico e conecta PMEs a escritórios parceiros especializados em Direito Civil Empresarial</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/cobranca-empresarial.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Cobrança Empresarial — Recuperação de Crédito para PMEs</image:title>
       <image:caption>Serviço de cobrança empresarial especializado: ação executiva, ação monitória, pesquisa patrimonial e penhora online via Sisbajud</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/revisao-de-contratos-empresariais.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Revisão de Contratos Empresariais — Blindagem Contratual para PMEs</image:title>
       <image:caption>Serviço de elaboração, revisão técnica e assessoria em contratos comerciais, acordos de sócios, NDAs e contratos de distribuição</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Acordo de Sócios e Estruturação Societária — Direito Societário para PMEs</image:title>
       <image:caption>Serviço de Direito Societário para PMEs: elaboração de acordo de sócios, contrato social, alteração contratual, estruturação societária e holding patrimonial</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Planejamento Sucessório Empresarial — Holding Familiar para PMEs</image:title>
       <image:caption>Serviço de planejamento sucessório empresarial: holding familiar, doação com reserva de usufruto, protocolo familiar e governança para PMEs</image:caption>
     </image:image>
@@ -223,200 +223,200 @@
   ═══════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/rio-de-janeiro-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/rio-de-janeiro-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/rio-de-janeiro-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/rio-de-janeiro-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/sao-goncalo-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/sao-goncalo-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-goncalo-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-goncalo-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/duque-de-caxias-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/duque-de-caxias-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/duque-de-caxias-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/duque-de-caxias-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/nova-iguacu-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/nova-iguacu-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/nova-iguacu-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/nova-iguacu-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/campos-dos-goytacazes-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/campos-dos-goytacazes-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/campos-dos-goytacazes-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/campos-dos-goytacazes-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/belford-roxo-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/belford-roxo-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/belford-roxo-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/belford-roxo-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/niteroi-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/niteroi-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/niteroi-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/niteroi-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/sao-joao-de-meriti-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/sao-joao-de-meriti-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-joao-de-meriti-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-joao-de-meriti-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/petropolis-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/petropolis-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/petropolis-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/petropolis-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/volta-redonda-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/volta-redonda-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/volta-redonda-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/volta-redonda-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/mage-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/mage-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/mage-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/mage-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/macae-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/macae-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/macae-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/macae-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/itaborai-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/itaborai-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/itaborai-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/itaborai-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/cabo-frio-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/cabo-frio-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/cabo-frio-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/cabo-frio-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/nova-friburgo-rj.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/nova-friburgo-rj.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/nova-friburgo-rj.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/nova-friburgo-rj.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/juiz-de-fora-mg.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/juiz-de-fora-mg.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/juiz-de-fora-mg.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/juiz-de-fora-mg.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/belo-horizonte-mg.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/belo-horizonte-mg.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/belo-horizonte-mg.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/belo-horizonte-mg.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/servicos/cobranca-empresarial/barbacena-mg.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/servicos/cobranca-empresarial/barbacena-mg.html"/>
+    <loc>https://consiliumadvogados.com.br/servicos/cobranca-empresarial/barbacena-mg.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/servicos/cobranca-empresarial/barbacena-mg.html"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/privacidade.html</loc>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumhub.com.br/privacidade.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumhub.com.br/privacidade.html"/>
+    <loc>https://consiliumadvogados.com.br/privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://consiliumadvogados.com.br/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://consiliumadvogados.com.br/privacidade.html"/>
     <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <image:image>
-      <image:loc>https://consiliumhub.com.br/assets/og-image.jpg</image:loc>
+      <image:loc>https://consiliumadvogados.com.br/assets/og-image.jpg</image:loc>
       <image:title>Política de Privacidade Consilium — LGPD e Tratamento de Dados</image:title>
       <image:caption>Como a Consilium coleta, usa, compartilha e protege dados pessoais em conformidade com a Lei Geral de Proteção de Dados</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#solucoes</loc>
+    <loc>https://consiliumadvogados.com.br/#solucoes</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#resultados</loc>
+    <loc>https://consiliumadvogados.com.br/#resultados</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#setores</loc>
+    <loc>https://consiliumadvogados.com.br/#setores</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#hub</loc>
+    <loc>https://consiliumadvogados.com.br/#hub</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#perguntas</loc>
+    <loc>https://consiliumadvogados.com.br/#perguntas</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://consiliumhub.com.br/#contato</loc>
+    <loc>https://consiliumadvogados.com.br/#contato</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
