@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
 
+  <!-- ─── SEGURANÇA — CSP + HARDENING ────────────────── -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; form-action https://api.web3forms.com 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <!-- ─── TÍTULO & DESCRIÇÃO ─────────────────────────── -->
   <title>Consilium | Advocacia Empresarial para PMEs no Brasil</title>
   <meta name="description" content="Hub de advocacia empresarial para PMEs: cobrança, contratos, acordo de sócios e sucessão. Conexão com escritório parceiro em até 4h úteis.">
@@ -1291,22 +1296,35 @@
               <input type="hidden" name="subject" value="Novo Diagnóstico — Consilium (consiliumadvogados.com.br)">
               <input type="hidden" name="from_name" value="Consilium | Site">
               <input type="hidden" name="redirect" value="false">
-              <!-- Honeypot anti-spam: campo invisivel que humanos nao preenchem -->
-              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+              <!-- Honeypot anti-spam off-screen (humanos nao tabulam ate aqui; bots modernos caem nele) -->
+              <div class="honeypot" aria-hidden="true">
+                <label for="botcheck">Não preencha este campo</label>
+                <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+              </div>
 
               <div class="form-group">
                 <label class="form-label" for="name">Seu nome / Cargo *</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Nome completo" required autocomplete="name">
+                <input class="form-input" type="text" id="name" name="name" placeholder="Nome completo"
+                       required autocomplete="name"
+                       minlength="2" maxlength="100">
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="company">Empresa / Faturamento Aproximado *</label>
-                <input class="form-input" type="text" id="company" name="company" placeholder="Nome da empresa e setor" required autocomplete="organization">
+                <input class="form-input" type="text" id="company" name="company" placeholder="Nome da empresa e setor"
+                       required autocomplete="organization"
+                       minlength="2" maxlength="150">
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="phone">Telefone de Contato *</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required autocomplete="tel">
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX"
+                       required autocomplete="tel"
+                       minlength="14" maxlength="16"
+                       inputmode="tel"
+                       pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$"
+                       title="Formato: (XX) XXXXX-XXXX">
               </div>
 
               <div class="form-group">
@@ -1320,6 +1338,20 @@
                 </select>
               </div>
 
+              <!-- ─── LGPD — Consentimento explícito (Art. 7º, I e Art. 9º da Lei 13.709/2018) ─── -->
+              <div class="form-group form-group--consent">
+                <label class="form-consent">
+                  <input class="form-consent__check" type="checkbox" id="lgpd" name="lgpd_consent" required>
+                  <span class="form-consent__text">
+                    Autorizo o tratamento dos meus dados pessoais (nome, empresa e telefone)
+                    pela Consilium, exclusivamente para fins de diagnóstico jurídico e
+                    eventual conexão com escritório parceiro, conforme a
+                    <a href="/privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>
+                    e a <strong>Lei nº 13.709/2018 (LGPD)</strong>. *
+                  </span>
+                </label>
+              </div>
+
               <button class="btn btn--primary btn--full" type="submit">
                 Agendar Diagnóstico Profissional
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1329,7 +1361,7 @@
 
               <p class="contact__form-note">
                 Retorno em até 4 horas úteis · Conexão com escritório parceiro ·
-                Sigilo profissional garantido
+                Sigilo profissional garantido · Dados tratados conforme LGPD
               </p>
             </form>
 

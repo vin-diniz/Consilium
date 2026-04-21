@@ -224,10 +224,16 @@ form?.addEventListener('submit', async (e) => {
     Enviando...
   `;
 
-  // Anexa metadados uteis ao payload
+  // Honeypot: se foi marcado (bot), abortar silenciosamente sem dar sinal
+  if (form.botcheck?.checked) {
+    form.hidden = true;
+    formSuccess.hidden = false;
+    return;
+  }
+
+  // Metadados minimos (LGPD: minimizacao de dados — sem user-agent)
   const payload = new FormData(form);
   payload.append('page_url', window.location.href);
-  payload.append('user_agent', navigator.userAgent);
   payload.append('submitted_at', new Date().toISOString());
 
   try {
@@ -256,20 +262,41 @@ form?.addEventListener('submit', async (e) => {
 
 function validateForm() {
   let valid = true;
+  let firstInvalid = null;
   const required = form.querySelectorAll('[required]');
 
   required.forEach(field => {
-    const isEmpty = !field.value.trim();
-    field.classList.toggle('error', isEmpty);
+    // Para checkbox exige marcado; para texto/select exige valor nao-vazio
+    const isInvalid = field.type === 'checkbox'
+      ? !field.checked
+      : !field.value.trim();
 
-    if (isEmpty) {
+    field.classList.toggle('error', isInvalid);
+
+    if (isInvalid) {
       valid = false;
-      if (field === required[0]) field.focus();
+      if (!firstInvalid) firstInvalid = field;
     } else {
-      field.addEventListener('input', () => field.classList.remove('error'), { once: true });
+      field.addEventListener(
+        field.type === 'checkbox' ? 'change' : 'input',
+        () => field.classList.remove('error'),
+        { once: true }
+      );
     }
   });
 
+  // Validacao de pattern (regex do phone)
+  const phone = form.querySelector('input[name="phone"]');
+  if (phone && phone.value.trim() && phone.pattern) {
+    const re = new RegExp(phone.pattern);
+    if (!re.test(phone.value.trim())) {
+      phone.classList.add('error');
+      valid = false;
+      if (!firstInvalid) firstInvalid = phone;
+    }
+  }
+
+  if (firstInvalid) firstInvalid.focus();
   return valid;
 }
 

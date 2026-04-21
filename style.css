@@ -3344,3 +3344,86 @@ a.blog-card__category:hover { color: var(--gold-pale); }
 @media (max-width: 480px) {
   .locations-accordion__count { display: none; }
 }
+
+
+/* ═══════════════════════════════════════════════════════
+   FORM — HONEYPOT OFF-SCREEN + LGPD CONSENT
+   ═══════════════════════════════════════════════════════ */
+
+/* Honeypot: invisivel para humanos, detectavel por bots que preenchem todos os campos */
+.honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+/* LGPD — checkbox de consentimento */
+.form-group--consent {
+  margin-top: 8px;
+}
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  padding: 14px 16px;
+  border: 1px solid rgba(192, 144, 48, 0.22);
+  border-radius: 10px;
+  background: rgba(192, 144, 48, 0.03);
+  transition: border-color 0.22s ease, background 0.22s ease;
+}
+
+.form-consent:hover {
+  border-color: rgba(192, 144, 48, 0.4);
+  background: rgba(192, 144, 48, 0.06);
+}
+
+.form-consent:has(.form-consent__check:focus-visible) {
+  outline: 2px solid #C09030;
+  outline-offset: 2px;
+}
+
+.form-consent:has(.form-consent__check.error) {
+  border-color: #B85A5A;
+  background: rgba(184, 90, 90, 0.08);
+}
+
+.form-consent__check {
+  flex-shrink: 0;
+  margin: 3px 0 0 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #C09030;
+}
+
+.form-consent__text {
+  color: rgba(244, 239, 228, 0.82);
+  font-family: var(--font-body, 'Inter'), sans-serif;
+  font-size: 13.5px;
+  line-height: 1.55;
+  letter-spacing: 0.005em;
+}
+
+.form-consent__text a {
+  color: #C09030;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.form-consent__text a:hover { color: #D4A242; }
+
+.form-consent__text strong {
+  color: #F4EFE4;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .form-consent { padding: 12px 14px; gap: 10px; }
+  .form-consent__text { font-size: 13px; }
+}
