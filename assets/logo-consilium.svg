@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Consilium — Hub de Advocacia Empresarial">
+  <title>Consilium — Hub de Advocacia Empresarial</title>
+  <desc>Monograma "C" dourado com linha horizontal representando a balança da justiça, sobre fundo escuro quente.</desc>
+
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#D4A242"/>
+      <stop offset="50%" stop-color="#C09030"/>
+      <stop offset="100%" stop-color="#A67722"/>
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#12100C"/>
+      <stop offset="100%" stop-color="#0B0A08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background arredondado -->
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="url(#bgGradient)"/>
+
+  <!-- Fino anel dourado externo (sofisticação) -->
+  <rect x="14" y="14" width="484" height="484" rx="86" fill="none" stroke="#C09030" stroke-opacity="0.22" stroke-width="1.5"/>
+
+  <!-- Monograma C — traço sério, em Playfair-like -->
+  <path d="M 356 178
+           C 332 152, 296 136, 256 136
+           C 184 136, 130 192, 130 264
+           C 130 336, 184 392, 256 392
+           C 296 392, 332 376, 356 350"
+        fill="none"
+        stroke="url(#goldGradient)"
+        stroke-width="34"
+        stroke-linecap="round"/>
+
+  <!-- Linha horizontal evocando a base da balança / coluna jurídica -->
+  <line x1="172" y1="264" x2="330" y2="264" stroke="url(#goldGradient)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Pequeno serif cap nas extremidades do C (sofisticação tipográfica) -->
+  <circle cx="356" cy="178" r="10" fill="url(#goldGradient)"/>
+  <circle cx="356" cy="350" r="10" fill="url(#goldGradient)"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Consilium">
+  <defs>
+    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#D4A242"/>
+      <stop offset="100%" stop-color="#A67722"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="64" height="64" rx="12" fill="#0B0A08"/>
+  <path d="M 45 22
+           C 42 18, 37 16, 32 16
+           C 23 16, 16 23, 16 32
+           C 16 41, 23 48, 32 48
+           C 37 48, 42 46, 45 42"
+        fill="none" stroke="url(#fg)" stroke-width="5" stroke-linecap="round"/>
+  <line x1="22" y1="32" x2="41" y2="32" stroke="url(#fg)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
