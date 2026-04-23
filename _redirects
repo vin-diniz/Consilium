@@ -1,0 +1,5 @@
+# Consilium — Advocacia Empresarial | Cloudflare Pages redirects
+# apex → www  (force flag obrigatorio: redirect 301 mesmo quando o CF Pages
+# serviria o arquivo estatico na URL alternativa)
+
+https://consiliumadvogados.com.br/*  https://www.consiliumadvogados.com.br/:splat  301!
