@@ -38,12 +38,6 @@
   <link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/">
   <link rel="alternate" hreflang="x-default" href="https://www.consiliumadvogados.com.br/">
 
-  <!-- ─── GEOGRAFIA (SEO LOCAL) ──────────────────────── -->
-  <meta name="geo.region" content="BR-[UF]">
-  <meta name="geo.placename" content="[CIDADE]">
-  <meta name="geo.position" content="[LAT];[LONG]">
-  <meta name="ICBM" content="[LAT], [LONG]">
-
   <!-- ─── OPEN GRAPH / FACEBOOK ──────────────────────── -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Consilium — Advocacia Empresarial">
@@ -135,15 +129,13 @@
       },
 
       {
-        "@type": ["LegalService", "Attorney", "Organization", "LocalBusiness"],
+        "@type": ["LegalService", "Organization"],
         "@id": "https://www.consiliumadvogados.com.br/#organization",
         "name": "Consilium — Advocacia Empresarial",
-        "legalName": "[Razão Social Completa]",
         "alternateName": ["Consilium Advocacia", "Consilium Hub Jurídico"],
         "url": "https://www.consiliumadvogados.com.br/",
         "slogan": "Advocacia empresarial para quem cresceu além do improviso",
         "description": "Hub de advocacia empresarial com foco exclusivo em Direito Civil Empresarial para PMEs. Elaboração e revisão de contratos empresariais, cobrança e recuperação de crédito via ação executiva e monitória, defesa em ação indenizatória e estruturação societária. Atendimento a empresas com faturamento entre R$ 500 mil e R$ 20 milhões/ano.",
-        "foundingDate": "[YYYY-MM-DD]",
         "logo": {
           "@type": "ImageObject",
           "@id": "https://www.consiliumadvogados.com.br/#logo",
@@ -163,46 +155,12 @@
             "caption": "Consilium Hub de Advocacia Empresarial"
           }
         ],
-        "telephone": "[TELEFONE]",
         "email": "acesso@consiliumadvogados.com.br",
-        "priceRange": "$$$",
         "currenciesAccepted": "BRL",
         "paymentAccepted": "Transferência bancária, Pix, Boleto bancário",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "[ENDEREÇO]",
-          "addressLocality": "[CIDADE]",
-          "addressRegion": "[UF]",
-          "postalCode": "[CEP]",
-          "addressCountry": "BR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "[LAT]",
-          "longitude": "[LONG]"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "09:00",
-            "closes": "18:00"
-          }
-        ],
         "areaServed": [
-          { "@type": "City", "name": "[CIDADE]" },
-          { "@type": "AdministrativeArea", "name": "[ESTADO]" },
-          { "@type": "Country", "name": "Brasil", "sameAs": "https://www.wikidata.org/wiki/Q155" }
+          { "@type": "Country", "name": "Brasil" }
         ],
-        "serviceArea": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "[LAT]",
-            "longitude": "[LONG]"
-          },
-          "geoRadius": "100000"
-        },
         "knowsAbout": [
           "Direito Empresarial",
           "Direito Civil Empresarial",
@@ -285,11 +243,9 @@
           {
             "@type": "ContactPoint",
             "contactType": "customer service",
-            "telephone": "[TELEFONE]",
             "email": "acesso@consiliumadvogados.com.br",
             "availableLanguage": ["Portuguese"],
-            "areaServed": "BR",
-            "contactOption": "TollFree"
+            "areaServed": "BR"
           },
           {
             "@type": "ContactPoint",
@@ -491,50 +447,6 @@
               "@type": "Answer",
               "text": "O problema jurídico já age contra a empresa, mesmo parado. Cláusula contratual frágil já está exposta. Crédito inadimplido já caminha para prescrição. Citação judicial já corre prazo de contestação — e a revelia processual elimina a defesa. A ação estratégica reduz o risco; a inércia apenas multiplica a exposição patrimonial."
             }
-          }
-        ]
-      },
-
-      {
-        "@type": "Person",
-        "@id": "https://www.consiliumadvogados.com.br/#attorney",
-        "name": "[Nome da Advogada Responsável]",
-        "jobTitle": "Advogada Empresarial",
-        "description": "Advogada especialista em Direito Civil Empresarial com atuação focada em pequenas e médias empresas.",
-        "worksFor": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "memberOf": {
-          "@type": "Organization",
-          "name": "Ordem dos Advogados do Brasil — OAB/[UF]",
-          "url": "https://www.oab.org.br/"
-        },
-        "knowsAbout": [
-          "Direito Empresarial",
-          "Direito Contratual",
-          "Direito Societário",
-          "Responsabilidade Civil Empresarial",
-          "Recuperação de Crédito"
-        ],
-        "knowsLanguage": ["pt-BR"],
-        "hasOccupation": {
-          "@type": "Occupation",
-          "name": "Advogada Empresarial",
-          "occupationalCategory": "2612-05",
-          "skills": "Direito Civil Empresarial, Direito Contratual, Direito Societário, Recuperação de Crédito, Responsabilidade Civil Empresarial"
-        },
-        "hasCredential": [
-          {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Registro Profissional",
-            "name": "OAB/[UF] [Número]",
-            "recognizedBy": {
-              "@type": "Organization",
-              "name": "Ordem dos Advogados do Brasil"
-            }
-          },
-          {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "Pós-graduação",
-            "name": "Pós-graduação em Direito Empresarial"
           }
         ]
       }
@@ -1422,7 +1334,7 @@
       </div>
 
       <div class="footer__bottom">
-        <p>© 2025 Consilium — Hub de Inteligência Jurídica</p>
+        <p>© 2026 Consilium — Hub de Inteligência Jurídica</p>
         <p class="footer__disclaimer">
           Conteúdo estritamente informativo. As informações veiculadas são de responsabilidade 
           institucional da Consilium. Resultados mencionados referem-se a dados históricos de 
