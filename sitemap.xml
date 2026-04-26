@@ -761,6 +761,170 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ═══════════════════════════════════════════════
+       Sprint 5 — 20 páginas locais Paraná (5 cidades × 4 serviços)
+  ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/curitiba-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/curitiba-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-jose-dos-pinhais-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/sao-jose-dos-pinhais-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/londrina-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/londrina-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/maringa-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/maringa-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/cascavel-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/cobranca-empresarial/cascavel-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/curitiba-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/curitiba-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/sao-jose-dos-pinhais-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/sao-jose-dos-pinhais-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/londrina-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/londrina-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/maringa-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/maringa-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/cascavel-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/revisao-de-contratos-empresariais/cascavel-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/curitiba-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/curitiba-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/sao-jose-dos-pinhais-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/sao-jose-dos-pinhais-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/londrina-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/londrina-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/maringa-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/maringa-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/cascavel-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/acordo-de-socios-e-estruturacao-societaria/cascavel-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/curitiba-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/curitiba-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/sao-jose-dos-pinhais-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/sao-jose-dos-pinhais-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/londrina-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/londrina-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/maringa-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/maringa-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/cascavel-pr</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/servicos/planejamento-sucessorio-empresarial/cascavel-pr"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
   <url>
     <loc>https://www.consiliumadvogados.com.br/privacidade</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/privacidade"/>
