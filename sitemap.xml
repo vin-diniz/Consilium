@@ -925,6 +925,42 @@
     <priority>0.75</priority>
   </url>
 
+  <!-- ═══════════════════════════════════════════════
+       Sprint 6 — 4 artigos de blog geolocalizados PR
+  ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/cobranca-cadeia-automotiva-curitiba</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/cobranca-cadeia-automotiva-curitiba"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/clausulas-contratos-saude-educacao-londrina</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/clausulas-contratos-saude-educacao-londrina"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/acordo-socios-cooperativa-vs-ltda-maringa</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/acordo-socios-cooperativa-vs-ltda-maringa"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/holding-rural-sucessao-cascavel</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/holding-rural-sucessao-cascavel"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.consiliumadvogados.com.br/privacidade</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/privacidade"/>
