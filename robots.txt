@@ -3,12 +3,12 @@
 # robots.txt · Liberação total para crawlers legítimos
 # ═══════════════════════════════════════════════════════
 
-# ─── TODOS OS ROBÔS ─────────────────────────────────────
+# ─── REGRA GERAL (cobre todos os bots) ─────────────────
 User-agent: *
 Allow: /
-Disallow:
+Disallow: /cdn-cgi/
 
-# ─── GOOGLE ────────────────────────────────────────────
+# ─── BOTS DE BUSCA ─────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 
@@ -18,61 +18,23 @@ Allow: /
 User-agent: Googlebot-News
 Allow: /
 
-User-agent: Googlebot-Video
-Allow: /
-
-User-agent: Googlebot-Mobile
-Allow: /
-
 User-agent: AdsBot-Google
 Allow: /
 
-User-agent: Mediapartners-Google
-Allow: /
-
-# ─── BING ──────────────────────────────────────────────
 User-agent: Bingbot
-Allow: /
-
-User-agent: msnbot
-Allow: /
-
-User-agent: msnbot-media
-Allow: /
-
-# ─── OUTROS MOTORES ────────────────────────────────────
-User-agent: Slurp
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
 User-agent: Applebot
 Allow: /
 
-# ─── BOTS DE IA (AI MODE / AI OVERVIEWS) ───────────────
+# ─── BOTS DE IA — TREINO ───────────────────────────────
 User-agent: Google-Extended
 Allow: /
 
-User-agent: GoogleOther
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
 User-agent: GPTBot
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -84,11 +46,33 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# ─── REDES SOCIAIS (CARD PREVIEWS) ─────────────────────
-User-agent: facebookexternalhit
+User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Facebot
+User-agent: PerplexityBot
+Allow: /
+
+# ─── BOTS DE IA — SEARCH/GROUNDING ─────────────────────
+User-agent: GoogleOther
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ─── REDES SOCIAIS ─────────────────────────────────────
+User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
@@ -105,6 +89,3 @@ Allow: /
 
 # ─── SITEMAP ───────────────────────────────────────────
 Sitemap: https://www.consiliumadvogados.com.br/sitemap.xml
-
-# ─── HOST CANÔNICO ─────────────────────────────────────
-Host: https://www.consiliumadvogados.com.br
