@@ -23,7 +23,7 @@
     <loc>https://www.consiliumadvogados.com.br/blog</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.consiliumadvogados.com.br/blog"/>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,7 +39,7 @@
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/categoria/contratos</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/categoria/contratos"/>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,6 +63,14 @@
   <!-- ═══════════════════════════════════════════════
        ARTIGOS INDIVIDUAIS DO BLOG
   ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/reestruturacao-de-passivos-empresariais</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/reestruturacao-de-passivos-empresariais"/>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/acao-monitoria-quando-usar-no-lugar-da-acao-de-cobranca</loc>
