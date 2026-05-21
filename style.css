@@ -455,6 +455,11 @@ cite { font-style: normal; }
   position: absolute;
   inset: 0;
   background-image: url('assets/hero_bg.png');
+  background-image: image-set(
+    url('assets/hero_bg.avif') type('image/avif'),
+    url('assets/hero_bg.webp') type('image/webp'),
+    url('assets/hero_bg.png') type('image/png')
+  );
   background-size: cover;
   background-position: center;
   opacity: 0.15;

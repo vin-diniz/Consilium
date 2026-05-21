@@ -83,12 +83,17 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
+  <!-- ─── PRELOAD HERO IMAGE (LCP CRITICAL) ─────────────
+       Imagem de fundo do hero é o maior asset above-the-fold.
+       AVIF prioritário; browsers sem AVIF caem para WebP/PNG via image-set() do CSS. -->
+  <link rel="preload" as="image" href="/assets/hero_bg.avif" type="image/avif" fetchpriority="high">
+
   <!-- ─── FONTES (PRELOAD + STYLESHEET) ──────────────── -->
   <!-- Preload do CSS de fontes — acelera LCP do hero H1 em Playfair Display -->
   <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap">
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&display=swap">
   <link rel="preload" as="style" href="style.css">
   <link rel="stylesheet" href="style.css">
 
@@ -803,13 +808,17 @@
           <div class="about__visual reveal">
             <div class="about__photo-frame">
               <div class="about__photo-hub" role="img" aria-label="Visão do Hub">
-                <img src="assets/hub_team.png"
-                     alt="Equipe Consilium em reunião estratégica analisando soluções jurídicas para PMEs — advocacia empresarial especializada em Direito Civil Empresarial"
-                     loading="lazy"
-                     decoding="async"
-                     width="560"
-                     height="680"
-                     fetchpriority="low" />
+                <picture>
+                  <source srcset="assets/hub_team.avif" type="image/avif">
+                  <source srcset="assets/hub_team.webp" type="image/webp">
+                  <img src="assets/hub_team.png"
+                       alt="Equipe Consilium em reunião estratégica analisando soluções jurídicas para PMEs — advocacia empresarial especializada em Direito Civil Empresarial"
+                       loading="lazy"
+                       decoding="async"
+                       width="560"
+                       height="680"
+                       fetchpriority="low" />
+                </picture>
                 <div class="about__photo-hint">
                   <span>Equipe de Especialistas Consilium</span>
                 </div>
