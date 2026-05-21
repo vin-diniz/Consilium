@@ -5,3 +5,8 @@ contexto-cidades-pr.md
 _commit_msg.txt
 *.backup-pre-sprint-*
 _sprint*_t*.py
+
+# IDE / Editor (config local, não compartilhado)
+*.code-workspace
+.vscode/
+.idea/
