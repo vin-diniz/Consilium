@@ -47,7 +47,7 @@
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/categoria/societario</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/categoria/societario"/>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,6 +63,14 @@
   <!-- ═══════════════════════════════════════════════
        ARTIGOS INDIVIDUAIS DO BLOG
   ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/drag-along-acordo-de-socios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/drag-along-acordo-de-socios"/>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/sucessao-empresarial-por-obito-sem-planejamento</loc>
