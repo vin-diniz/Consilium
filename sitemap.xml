@@ -23,7 +23,7 @@
     <loc>https://www.consiliumadvogados.com.br/blog</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.consiliumadvogados.com.br/blog"/>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -47,7 +47,7 @@
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/categoria/societario</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/categoria/societario"/>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,6 +63,14 @@
   <!-- ═══════════════════════════════════════════════
        ARTIGOS INDIVIDUAIS DO BLOG
   ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/dissolucao-parcial-de-sociedade</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/dissolucao-parcial-de-sociedade"/>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/protocolo-familiar-o-que-e-validade-juridica</loc>
