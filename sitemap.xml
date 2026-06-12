@@ -39,7 +39,7 @@
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/categoria/contratos</loc>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/categoria/contratos"/>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,6 +63,14 @@
   <!-- ═══════════════════════════════════════════════
        ARTIGOS INDIVIDUAIS DO BLOG
   ═══════════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.consiliumadvogados.com.br/blog/empresa-processada-por-dano-moral</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.consiliumadvogados.com.br/blog/empresa-processada-por-dano-moral"/>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://www.consiliumadvogados.com.br/blog/dissolucao-parcial-de-sociedade</loc>
