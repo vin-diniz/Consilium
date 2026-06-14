@@ -3432,3 +3432,13 @@ a.blog-card__category:hover { color: var(--gold-pale); }
   .form-consent { padding: 12px 14px; gap: 10px; }
   .form-consent__text { font-size: 13px; }
 }
+
+/* ─── META DATA (datePublished / dateModified visivel) ─── */
+.meta-data {
+  font-family: var(--ff-body, sans-serif);
+  font-size: 13px;
+  color: var(--text-muted, rgba(244, 239, 228, 0.55));
+  margin: 12px 0 0;
+  letter-spacing: 0.01em;
+}
+.meta-data time { color: inherit; }
