@@ -3442,3 +3442,33 @@ a.blog-card__category:hover { color: var(--gold-pale); }
   letter-spacing: 0.01em;
 }
 .meta-data time { color: inherit; }
+
+/* ─── CLUSTER INTRA-CIDADE + LINK DE RETORNO ─── */
+.outros-servicos-cidade {
+  border-top: 1px solid var(--line, rgba(192, 144, 48, 0.18));
+  margin-top: 24px;
+}
+.outros-servicos-cidade h2 {
+  font-family: var(--ff-display, serif);
+  color: var(--text-primary, #F4EFE4);
+  margin: 0 0 12px;
+}
+.outros-servicos-cidade ul a {
+  color: var(--gold, #C09030);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.outros-servicos-cidade ul a:hover {
+  border-bottom-color: var(--gold, #C09030);
+}
+.voltar-hub a {
+  color: var(--text-muted, rgba(244, 239, 228, 0.55));
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+}
+.voltar-hub a:hover { color: var(--text-primary, #F4EFE4); }
+@media (max-width: 560px) {
+  .outros-servicos-cidade ul { columns: 1; }
+}
