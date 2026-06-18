@@ -10,3 +10,12 @@ _sprint*_t*.py
 *.code-workspace
 .vscode/
 .idea/
+
+# Fontes brutas de imagem (mantidas locais como fonte para regerar variantes)
+# As variantes -480/-960 .avif/.webp/.jpg sao commitadas e servidas pelo CDN
+assets/grothperfil.jpg
+
+# Node aux (sharp instalado pontualmente para gerar variantes)
+node_modules/
+package-lock.json
+package.json
