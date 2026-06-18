@@ -101,356 +101,74 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
   <!-- ═══════════════════════════════════════════════════
-       SCHEMA.ORG · GRAPH CONSOLIDADO
-       Arquitetura: WebSite → Organization/LegalService → WebPage
-                  → BreadcrumbList + Services × 3 + FAQPage + Person
-       Entidades conectadas via @id para formar knowledge graph
-       reconhecido por Google Search, AI Overviews e Bing
+       SCHEMA.ORG · @graph (home)
+       Organization (Consilium) + Person (Giancarlo Groth, responsavel
+       tecnico) + WebSite + WebPage. Sem aggregateRating, sem
+       PostalAddress (sem endereco fisico publicado), sem SearchAction.
   ═══════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-
       {
-        "@type": "WebSite",
-        "@id": "https://www.consiliumadvogados.com.br/#website",
-        "url": "https://www.consiliumadvogados.com.br/",
-        "name": "Consilium — Advocacia Empresarial",
-        "alternateName": "Consilium Hub de Advocacia Empresarial",
-        "description": "Site institucional da Consilium, hub de advocacia empresarial especializado em Direito Civil Empresarial para pequenas e médias empresas.",
-        "publisher": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "inLanguage": "pt-BR",
-        "copyrightYear": 2026,
-        "copyrightHolder": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "potentialAction": [{
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://www.consiliumadvogados.com.br/?s={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }]
-      },
-
-      {
-        "@type": ["LegalService", "Organization"],
         "@id": "https://www.consiliumadvogados.com.br/#organization",
-        "name": "Consilium — Advocacia Empresarial",
-        "alternateName": ["Consilium Advocacia", "Consilium Hub Jurídico"],
-        "url": "https://www.consiliumadvogados.com.br/",
-        "slogan": "Advocacia empresarial para quem cresceu além do improviso",
-        "description": "Hub de advocacia empresarial com foco exclusivo em Direito Civil Empresarial para PMEs. Elaboração e revisão de contratos empresariais, cobrança e recuperação de crédito via ação executiva e monitória, defesa em ação indenizatória e estruturação societária. Atendimento a empresas com faturamento entre R$ 500 mil e R$ 20 milhões/ano.",
-        "disambiguatingDescription": "Consilium Hub de Advocacia Empresarial para PMEs — não confundir com Consilium Soluções Empresariais (consultoria de dados/BI), Consilium BR (governança corporativa) ou Consilium Abogados (Sevilha, Espanha).",
+        "@type": "Organization",
+        "name": "Consilium Advogados Empresariais",
+        "alternateName": "Consilium",
+        "url": "https://www.consiliumadvogados.com.br",
         "logo": {
           "@type": "ImageObject",
           "@id": "https://www.consiliumadvogados.com.br/#logo",
           "url": "https://www.consiliumadvogados.com.br/assets/logo-consilium.svg",
-          "contentUrl": "https://www.consiliumadvogados.com.br/assets/logo-consilium.svg",
-          "width": 512,
-          "height": 512,
-          "caption": "Consilium — Advocacia Empresarial"
+          "inLanguage": "pt-BR"
         },
-        "image": [
-          { "@id": "https://www.consiliumadvogados.com.br/#logo" },
-          {
-            "@type": "ImageObject",
-            "url": "https://www.consiliumadvogados.com.br/assets/og-image.jpg",
-            "width": 1200,
-            "height": 630,
-            "caption": "Consilium Hub de Advocacia Empresarial"
-          }
-        ],
-        "email": "acesso@consiliumadvogados.com.br",
-        "currenciesAccepted": "BRL",
-        "paymentAccepted": "Transferência bancária, Pix, Boleto bancário",
-        "areaServed": [
-          { "@type": "Country", "name": "Brasil" }
-        ],
+        "founder": { "@id": "https://www.consiliumadvogados.com.br/#giancarlo" },
         "knowsAbout": [
-          "Direito Empresarial",
-          "Direito Civil Empresarial",
-          "Direito Contratual",
-          "Direito Societário",
-          "Direito Obrigacional",
-          "Direito Comercial",
-          "Responsabilidade Civil Empresarial",
-          "Recuperação de Crédito",
-          "Litígio Empresarial",
-          "Cobrança Empresarial",
-          "Contrato Empresarial",
-          "Contrato Comercial",
-          "Acordo de Sócios",
-          "Contrato Social",
-          "Estruturação Societária",
-          "Holding Patrimonial",
-          "Blindagem Contratual",
-          "Due Diligence Contratual",
-          "Ação Executiva",
-          "Ação Monitória",
-          "Título Executivo Extrajudicial",
-          "Pesquisa Patrimonial",
-          "Penhora Online",
-          "Tutela de Urgência",
-          "Medida Cautelar",
-          "Desconsideração da Personalidade Jurídica",
-          "Código Civil",
-          "Código de Processo Civil",
-          "Lei das Sociedades por Ações",
-          "Lei de Franquias",
-          "Lei de Liberdade Econômica",
-          "LGPD",
-          "Marco Civil da Internet"
-        ],
-        "knowsLanguage": [
-          { "@type": "Language", "name": "Portuguese (Brazil)", "alternateName": "pt-BR" }
-        ],
-        "serviceType": [
-          "Advocacia Empresarial",
-          "Advocacia Preventiva",
-          "Advocacia Consultiva",
-          "Advocacia Contenciosa",
-          "Assessoria Jurídica Empresarial",
-          "Consultoria Jurídica Empresarial",
-          "Assessoria Jurídica Mensal",
-          "Outsourcing Jurídico"
-        ],
-        "makesOffer": [
-          { "@id": "https://www.consiliumadvogados.com.br/#service-contratual" },
-          { "@id": "https://www.consiliumadvogados.com.br/#service-cobranca" },
-          { "@id": "https://www.consiliumadvogados.com.br/#service-resp-civil" }
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Áreas de Atuação em Direito Civil Empresarial",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@id": "https://www.consiliumadvogados.com.br/#service-contratual" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://www.consiliumadvogados.com.br/#service-cobranca" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://www.consiliumadvogados.com.br/#service-resp-civil" } }
-          ]
-        },
-        "audience": {
-          "@type": "BusinessAudience",
-          "@id": "https://www.consiliumadvogados.com.br/#audience",
-          "audienceType": "Pequenas e Médias Empresas (PMEs)",
-          "name": "PMEs brasileiras com faturamento entre R$ 500 mil e R$ 20 milhões/ano",
-          "geographicArea": { "@type": "Country", "name": "Brasil" }
-        },
-        "memberOf": [
-          {
-            "@type": "Organization",
-            "name": "Ordem dos Advogados do Brasil",
-            "alternateName": "OAB",
-            "url": "https://www.oab.org.br/",
-            "sameAs": "https://www.wikidata.org/wiki/Q1386302"
-          }
-        ],
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "email": "acesso@consiliumadvogados.com.br",
-            "availableLanguage": ["Portuguese"],
-            "areaServed": "BR"
-          },
-          {
-            "@type": "ContactPoint",
-            "contactType": "legal consultation",
-            "email": "acesso@consiliumadvogados.com.br",
-            "availableLanguage": ["Portuguese"]
-          }
+          "recuperação de crédito B2B",
+          "planejamento sucessório",
+          "holding familiar",
+          "revisão de contratos empresariais",
+          "acordo de sócios",
+          "estruturação societária"
         ]
       },
-
       {
-        "@type": "WebPage",
+        "@id": "https://www.consiliumadvogados.com.br/#giancarlo",
+        "@type": "Person",
+        "name": "Giancarlo Groth",
+        "jobTitle": "Advogado · Responsável técnico",
+        "description": "Advogado dedicado ao direito empresarial, com atuação em recuperação de crédito B2B, planejamento sucessório, contratos e acordos de sócios. Responsável técnico da Consilium.",
+        "image": "https://www.consiliumadvogados.com.br/assets/grothperfil-960.webp",
+        "worksFor": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
+        "knowsAbout": [
+          "direito empresarial",
+          "recuperação de crédito B2B",
+          "planejamento sucessório",
+          "holding familiar",
+          "revisão de contratos empresariais",
+          "acordo de sócios",
+          "estruturação societária"
+        ],
+        "identifier": "[OAB/UF nº _____]",
+        "url": "https://www.consiliumadvogados.com.br/#responsavel-tecnico"
+      },
+      {
+        "@id": "https://www.consiliumadvogados.com.br/#website",
+        "@type": "WebSite",
+        "name": "Consilium Advogados Empresariais",
+        "url": "https://www.consiliumadvogados.com.br",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://www.consiliumadvogados.com.br/#organization" }
+      },
+      {
         "@id": "https://www.consiliumadvogados.com.br/#webpage",
+        "@type": "WebPage",
         "url": "https://www.consiliumadvogados.com.br/",
-        "name": "Advocacia Empresarial para PMEs | Consilium — Direito Civil Empresarial, Contratos e Recuperação de Crédito",
-        "description": "Advocacia empresarial especializada em Direito Civil Empresarial para pequenas e médias empresas: contratos empresariais, cobrança e recuperação de crédito, responsabilidade civil empresarial, estruturação societária.",
         "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/#website" },
         "about": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "mainEntity": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "@id": "https://www.consiliumadvogados.com.br/#primaryimage",
-          "url": "https://www.consiliumadvogados.com.br/assets/og-image.jpg",
-          "contentUrl": "https://www.consiliumadvogados.com.br/assets/og-image.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "breadcrumb": { "@id": "https://www.consiliumadvogados.com.br/#breadcrumb" },
-        "inLanguage": "pt-BR",
-        "datePublished": "2026-01-01T00:00:00-03:00",
-        "dateModified": "2026-04-19T00:00:00-03:00",
-        "mentions": [
-          { "@id": "https://www.consiliumadvogados.com.br/#service-contratual" },
-          { "@id": "https://www.consiliumadvogados.com.br/#service-cobranca" },
-          { "@id": "https://www.consiliumadvogados.com.br/#service-resp-civil" },
-          { "@id": "https://www.consiliumadvogados.com.br/#faqpage" }
-        ],
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".hero__title", ".hero__subtitle", ".section-title"]
-        },
-        "potentialAction": [{
-          "@type": "ReadAction",
-          "target": "https://www.consiliumadvogados.com.br/"
-        }]
-      },
-
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.consiliumadvogados.com.br/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Início",
-            "item": "https://www.consiliumadvogados.com.br/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Advocacia Empresarial"
-          }
-        ]
-      },
-
-      {
-        "@type": "Service",
-        "@id": "https://www.consiliumadvogados.com.br/#service-contratual",
-        "name": "Direito Contratual Empresarial",
-        "alternateName": "Blindagem Contratual",
-        "description": "Elaboração, revisão e análise técnica de contratos empresariais, acordos de sócios, NDAs, contratos de prestação de serviços, fornecimento, distribuição, franquia e parceria comercial. Due diligence contratual, negociação de cláusulas (penal, não concorrência, exclusividade, foro) e estruturação societária. Aplicação do Código Civil, Lei das Sociedades por Ações e LGPD.",
-        "serviceType": "Advocacia Preventiva e Consultiva",
-        "category": "Direito Contratual Empresarial",
-        "provider": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "areaServed": { "@type": "Country", "name": "Brasil" },
-        "audience": { "@id": "https://www.consiliumadvogados.com.br/#audience" },
-        "serviceOutput": [
-          "Contrato empresarial elaborado",
-          "Contrato revisado com parecer técnico",
-          "Acordo de sócios estruturado",
-          "Contrato social alterado",
-          "Due diligence contratual documentada"
-        ],
-        "termsOfService": "https://www.consiliumadvogados.com.br/#contato",
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://www.consiliumadvogados.com.br/#contato",
-          "availableLanguage": "pt-BR"
-        }
-      },
-
-      {
-        "@type": "Service",
-        "@id": "https://www.consiliumadvogados.com.br/#service-cobranca",
-        "name": "Cobrança e Recuperação de Crédito Empresarial",
-        "alternateName": ["Recuperação Ativa de Crédito", "Ação Executiva Empresarial"],
-        "description": "Notificação extrajudicial estruturada, protesto de título, ação de cobrança, ação monitória, ação executiva, cumprimento de sentença, pesquisa patrimonial e penhora online via Sisbajud/BacenJud. Desconsideração da personalidade jurídica quando aplicável. Modelo de honorário fixo, honorário de êxito ou honorário misto conforme a natureza da carteira inadimplente.",
-        "serviceType": "Advocacia Contenciosa",
-        "category": "Recuperação de Crédito",
-        "provider": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "areaServed": { "@type": "Country", "name": "Brasil" },
-        "audience": { "@id": "https://www.consiliumadvogados.com.br/#audience" },
-        "serviceOutput": [
-          "Crédito inadimplido recuperado",
-          "Título executivo extrajudicial executado",
-          "Penhora online realizada via Sisbajud",
-          "Pesquisa patrimonial documentada",
-          "Acordo judicial ou extrajudicial homologado"
-        ],
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://www.consiliumadvogados.com.br/#contato",
-          "availableLanguage": "pt-BR"
-        }
-      },
-
-      {
-        "@type": "Service",
-        "@id": "https://www.consiliumadvogados.com.br/#service-resp-civil",
-        "name": "Responsabilidade Civil Empresarial",
-        "alternateName": ["Defesa em Ação Indenizatória", "Contencioso Civil Empresarial"],
-        "description": "Defesa em ação indenizatória movida contra a empresa, contestação estratégica, produção de prova pericial e documental, propositura de ação de reparação de danos quando a empresa foi a parte prejudicada. Tutela de urgência, medida cautelar, análise de nexo causal e excludentes de responsabilidade. Atuação em Vara Cível, Vara Empresarial e câmara de arbitragem.",
-        "serviceType": "Advocacia Contenciosa",
-        "category": "Responsabilidade Civil Empresarial",
-        "provider": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "areaServed": { "@type": "Country", "name": "Brasil" },
-        "audience": { "@id": "https://www.consiliumadvogados.com.br/#audience" },
-        "serviceOutput": [
-          "Contestação estratégica protocolada",
-          "Ação indenizatória defendida",
-          "Tutela de urgência obtida",
-          "Acordo judicial homologado",
-          "Parecer técnico sobre viabilidade processual"
-        ],
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://www.consiliumadvogados.com.br/#contato",
-          "availableLanguage": "pt-BR"
-        }
-      },
-
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.consiliumadvogados.com.br/#faqpage",
-        "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/#webpage" },
-        "about": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "inLanguage": "pt-BR",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Isso não é caro para o porte da minha empresa?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "PMEs com faturamento entre R$ 500 mil e R$ 20 milhões/ano investem, em média, 0,5% a 3% do faturamento em assessoria jurídica empresarial. O custo de não ter é tipicamente 10 a 30 vezes maior — um descumprimento contratual não prevenido, uma prescrição consumada ou uma revelia processual custam mais que anos de assessoria qualificada."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Já contratei advogado antes e não resolveu. Por que agora seria diferente?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A diferença está em três pontos: (1) foco exclusivo em Direito Civil Empresarial para PMEs, não somos generalistas; (2) diagnóstico jurídico estruturado antes da execução — o cliente conhece o prognóstico processual antes de contratar; (3) comunicação em linguagem empresarial acessível, sem juridiquês."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Minha empresa é pequena demais para advocacia empresarial especializada?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Atendemos especificamente empresário individual, Sociedade Limitada (LTDA) e empresa familiar com faturamento entre R$ 500 mil e R$ 20 milhões/ano. Esse é o porte com maior exposição patrimonial sem estrutura interna para absorver — e onde a advocacia empresarial preventiva tem maior impacto operacional."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Como funciona o honorário de êxito em cobrança empresarial?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Em cobrança empresarial, o modelo mais comum é o honorário misto: uma parcela fixa para estruturação da ação de cobrança (ou ação executiva com título executivo extrajudicial) e um percentual de êxito sobre o valor efetivamente recuperado. Em alguns perfis de carteira, opera-se em êxito puro, alinhando risco e resultado."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "O que é título executivo extrajudicial e quais documentos valem?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Título executivo extrajudicial é todo documento com força de execução imediata reconhecida pelo Código de Processo Civil: cheque, nota promissória, duplicata aceita, contrato assinado por duas testemunhas, confissão de dívida. Documentos sem força executiva (e-mails, mensagens, notas fiscais isoladas) seguem pelo rito da ação monitória, com procedimento próprio."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Melhor não mexer no problema jurídico — posso piorar a situação?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "O problema jurídico já age contra a empresa, mesmo parado. Cláusula contratual frágil já está exposta. Crédito inadimplido já caminha para prescrição. Citação judicial já corre prazo de contestação — e a revelia processual elimina a defesa. A ação estratégica reduz o risco; a inércia apenas multiplica a exposição patrimonial."
-            }
-          }
-        ]
+        "datePublished": "2026-04-19",
+        "dateModified": "2026-06-18"
       }
-
     ]
   }
   </script>
@@ -527,600 +245,209 @@
          Motor: Resolução Funcional + Construção de Status
          Conformidade: Provimento 205/2021 OAB
     ═══════════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════
+         HERO · ZONA OURO (0-30%)
+         Front-load: answer capsule no topo + 1 estatistica + CTA duplo
+    ═══════════════════════════════════════ -->
     <section class="hero" id="hero" aria-label="Apresentação">
       <div class="hero__bg-photo" aria-hidden="true"></div>
       <div class="hero__bg-dots" aria-hidden="true"></div>
       <div class="hero__bg-gradient" aria-hidden="true"></div>
 
-      <!-- Scenario Ticker — Espelha a busca real no Google do empresário PME -->
-      <div class="hero__ticker" aria-hidden="true">
-        <div class="hero__ticker-track" id="heroTicker">
-          <span>Cliente deve R$ 80 mil há 90 dias e some nas cobranças</span>
-          <span>Contrato de distribuição de R$ 1,2M para assinar amanhã</span>
-          <span>Citação judicial recebida — 15 dias para responder</span>
-          <span>Sócio descumpriu acordo verbal — e agora?</span>
-          <span>Fornecedor quebrou contrato e diz que não vai pagar multa</span>
-          <span>Ex-cliente pede indenização de R$ 90 mil por serviço entregue</span>
-          <span>Empresa crescendo e contratos ainda são modelos da internet</span>
-        </div>
-      </div>
-
       <div class="container hero__container">
-
         <div class="hero__content">
-          <!-- Badge: core entities MA (Advocacia empresarial + PME) -->
+
           <div class="badge reveal-instant">
             <span class="hero__badge-pulse" aria-hidden="true"></span>
-            ADVOCACIA EMPRESARIAL PARA PMEs · DIREITO CIVIL EMPRESARIAL
+            DIREITO EMPRESARIAL · PEQUENAS E MÉDIAS EMPRESAS
           </div>
 
-          <!-- H1: entidades-âncora + motor "medo de parecer amador" -->
           <h1 class="hero__title reveal-instant">
-            Assessoria jurídica empresarial<br>
-            <em>para quem cresceu além do improviso.</em>
+            Direito empresarial para donos de<br>pequenas e médias empresas.
           </h1>
 
-          <!-- Sub: densifica contratos + inadimplência + responsabilidade civil + patrimônio -->
-          <p class="hero__subtitle reveal-instant">
-            Contratos empresariais blindados antes da assinatura. Créditos inadimplidos
-            recuperados com título executivo e respaldo judicial. Defesa estratégica
-            em ações indenizatórias e litígios B2B. Proteção patrimonial para
-            pequenas e médias empresas em crescimento.<br>
-            <strong>Você cuida do negócio. Nós cuidamos do que protege o negócio.</strong>
+          <p class="hero__subtitle reveal-instant" style="margin-bottom: 24px;">
+            Quatro frentes — recuperação de crédito B2B, planejamento sucessório com holding familiar, revisão de contratos e acordo de sócios — com atuação preventiva e técnica.
+          </p>
+
+          <!-- Master answer capsule (40-60 palavras, autocontida, sem link) -->
+          <div class="hero__answer reveal-instant" style="background: rgba(192, 144, 48, 0.05); border-left: 3px solid #C09030; padding: 20px 24px; border-radius: 8px; margin-bottom: 24px; max-width: 720px;">
+            <p style="font-size: 15px; line-height: 1.7; margin: 0; color: var(--text-primary);">
+              A Consilium é uma estrutura jurídica empresarial que conecta donos de pequenas e médias empresas à atuação especializada em quatro frentes: recuperação de crédito B2B, planejamento sucessório com holding familiar, contratos empresariais e acordo de sócios. O responsável técnico é o advogado Giancarlo Groth (OAB/__&nbsp;_____), com atuação preventiva e técnica.
+            </p>
+          </div>
+
+          <!-- Estatistica isolada com fonte a validar -->
+          <p class="hero__stat reveal-instant" style="font-size: 14px; color: var(--text-muted, rgba(244,239,228,0.65)); margin-bottom: 28px; max-width: 720px;">
+            <strong style="color: var(--gold, #C09030);">[VALIDAR: percentual, Serasa Experian, ano]</strong> das micro e pequenas empresas brasileiras registram inadimplência empresarial ativa &mdash; vetor recorrente de recuperação de crédito B2B.
           </p>
 
           <div class="hero__ctas reveal-instant">
-            <a href="#contato" class="btn btn--primary" id="heroCta">
-              Agendar Diagnóstico Jurídico
+            <!-- TODO substituir href por wa.me/{numero} quando link for fornecido (pendencia do briefing CTA) -->
+            <a href="/#contato" class="btn btn--primary" id="heroCta" data-cta-primario="whatsapp-pendente">
+              Avaliar a viabilidade do meu caso
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
-            <a href="#solucoes" class="btn btn--ghost">Ver Áreas de Atuação</a>
+            <a href="#contato" class="btn btn--ghost">Veja a viabilidade jurídica</a>
           </div>
 
-          <!-- Trust anchors: especialização (Cat 15, MA) + ancoragem de público -->
-          <div class="hero__trust-bar reveal-instant">
-            <div class="hero__trust-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M7 1L1 4v4c0 3.5 2.7 6.5 6 7.5 3.3-1 6-4 6-7.5V4L7 1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-                <path d="M4.5 7l2 2 3-3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Direito Empresarial · PMEs R$ 500k–20M/ano</span>
-            </div>
-            <div class="hero__trust-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.3"/>
-                <path d="M7 4v3l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              <span>Retorno em até 4h úteis</span>
-            </div>
-            <div class="hero__trust-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <rect x="2" y="1" width="10" height="12" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
-                <path d="M5 5h4M5 7.5h4M5 10h2.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-              </svg>
-              <span>Linguagem empresarial, sem juridiquês</span>
-            </div>
-          </div>
         </div>
-
-
-
       </div>
 
-      <a href="#problemas" class="hero__scroll" aria-label="Rolar para baixo">
+      <a href="#responsavel-tecnico" class="hero__scroll" aria-label="Rolar para a apresentação do responsável técnico">
         <span class="hero__scroll-line" aria-hidden="true"></span>
       </a>
     </section>
 
 
     <!-- ═══════════════════════════════════════
-         PAIN POINTS (Refined for Hub)
+         RESPONSÁVEL TÉCNICO · ZONA OURO/PRATA (trust signal alto)
     ═══════════════════════════════════════ -->
-    <section class="pain section" id="problemas" aria-labelledby="pain-title">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="badge reveal">SITUAÇÕES QUE CONHECEMOS BEM</span>
-          <h2 class="section-title reveal" id="pain-title">
-            Três situações que drenam<br>o caixa de PMEs todo mês
-          </h2>
-          <p class="section-sub reveal">
-            Cada dia parado nessas situações é dinheiro saindo.
-            E o custo da ação, comparado ao custo da omissão, é sempre fração.
-          </p>
-        </div>
-
-        <div class="pain__grid">
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">01</div>
-            <div class="pain-card__icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M14 7v2M14 19v2M10 11h2.5a1.5 1.5 0 0 1 0 3h-1a1.5 1.5 0 0 0 0 3H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="pain-card__title">Inadimplência travando o fluxo de caixa</h3>
-            <p class="pain-card__body">
-              R$ 80 mil no contas a receber vencido há mais de 90 dias.
-              Cobrança amigável esgotada, devedor evitando contato.
-              Com título executivo extrajudicial em mãos — cheque, duplicata,
-              contrato assinado — a ação executiva, a ação monitória e a pesquisa
-              patrimonial via Sisbajud viram o jogo antes da prescrição.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">02</div>
-            <div class="pain-card__icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect x="5" y="3" width="18" height="22" rx="2" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M10 10h8M10 14h8M10 18h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="pain-card__title">Contratos empresariais frágeis expondo patrimônio</h3>
-            <p class="pain-card__body">
-              Minuta de 15 páginas enviada pelo parceiro. Cláusula penal
-              desproporcional, cláusula de não concorrência excessiva, foro
-              desfavorável — e nenhuma limitação de responsabilidade. Revisão
-              contratual com análise de risco antes da assinatura é a forma mais
-              barata de prevenir descumprimento contratual e litígio empresarial.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">03</div>
-            <div class="pain-card__icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M14 3L26 23H2L14 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M14 13v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <circle cx="14" cy="20" r="1" fill="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="pain-card__title">Ação indenizatória contra sua empresa</h3>
-            <p class="pain-card__body">
-              Citação recebida. R$ 90 mil de reparação pedida por suposto vício de
-              serviço. O prazo de contestação do CPC é inegociável. Contestação
-              estratégica, análise de excludentes de responsabilidade e eventual
-              tutela de urgência são o que separam uma defesa cirúrgica de uma
-              condenação em dano material, lucros cessantes e dano moral somados.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         SOLUTIONS (The Hub dynamic)
-    ═══════════════════════════════════════ -->
-    <section class="services section section--alt" id="solucoes" aria-labelledby="services-title">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="badge reveal">ÁREAS DE ATUAÇÃO EM DIREITO EMPRESARIAL</span>
-          <h2 class="section-title reveal" id="services-title">
-            Advocacia empresarial preventiva,<br>consultiva e contenciosa
-          </h2>
-          <p class="section-sub reveal">
-            Três pilares do Direito Civil Empresarial aplicados à realidade operacional
-            de PMEs: contratos, recuperação de crédito e responsabilidade civil empresarial.
-          </p>
-        </div>
-
-        <div class="services__grid">
-
-          <article class="svc-card reveal">
-            <div class="svc-card__tag">CONTRATUAL · SOCIETÁRIO</div>
-            <div class="svc-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9l-6-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M9 3v6h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="svc-card__title">Direito Contratual Empresarial</h3>
-            <p class="svc-card__subtitle">Blindagem contratual antes da assinatura</p>
-            <p class="svc-card__body">
-              Elaboração, revisão e análise de contratos empresariais — prestação
-              de serviços, fornecimento, distribuição, representação comercial,
-              franquia, parceria. Due diligence contratual, negociação de cláusulas
-              (penal, não concorrência, exclusividade, foro) e adequação à LGPD.
-            </p>
-            <ul class="svc-card__list" aria-label="Inclui">
-              <li>Revisão e elaboração de contratos comerciais</li>
-              <li>Acordo de sócios e contrato social</li>
-              <li>NDA, MOU e termos de confidencialidade</li>
-              <li>Estruturação societária e holding patrimonial</li>
-            </ul>
-            <a href="#contato" class="svc-card__link">Blindar meus contratos <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="svc-card svc-card--featured reveal">
-            <div class="svc-card__featured-badge" aria-label="Solução prioritária">Mais solicitado</div>
-            <div class="svc-card__tag">RECUPERAÇÃO DE CRÉDITO</div>
-            <div class="svc-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2C7.58 2 4 5.58 4 10c0 7 8 12 8 12s8-5 8-12c0-4.42-3.58-8-8-8Z" stroke="currentColor" stroke-width="1.6"/>
-                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-            </div>
-            <h3 class="svc-card__title">Cobrança e Recuperação de Crédito</h3>
-            <p class="svc-card__subtitle">Do título executivo à satisfação do crédito</p>
-            <p class="svc-card__body">
-              Notificação extrajudicial estruturada, protesto de título,
-              ação de cobrança, ação monitória, ação executiva e cumprimento
-              de sentença. Pesquisa patrimonial, penhora online via Sisbajud/BacenJud,
-              desconsideração da personalidade jurídica quando aplicável.
-            </p>
-            <ul class="svc-card__list" aria-label="Inclui">
-              <li>Execução de título executivo extrajudicial</li>
-              <li>Ação monitória para documentos sem força executiva</li>
-              <li>Pesquisa patrimonial e penhora online (Sisbajud)</li>
-              <li>Honorário de êxito e honorário misto</li>
-            </ul>
-            <a href="#contato" class="svc-card__link">Recuperar meus créditos <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="svc-card reveal">
-            <div class="svc-card__tag">RESPONSABILIDADE CIVIL</div>
-            <div class="svc-card__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L2 7v7c0 5 4.5 9.5 10 11 5.5-1.5 10-6 10-11V7L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="svc-card__title">Responsabilidade Civil Empresarial</h3>
-            <p class="svc-card__subtitle">Defesa estratégica em litígio empresarial</p>
-            <p class="svc-card__body">
-              Defesa em ação indenizatória contra a empresa. Propositura de ação
-              de reparação de danos quando você foi o prejudicado. Análise de
-              nexo causal, excludentes de responsabilidade, quantificação de
-              dano material, lucros cessantes e dano moral empresarial.
-            </p>
-            <ul class="svc-card__list" aria-label="Inclui">
-              <li>Contestação estratégica e produção de provas</li>
-              <li>Tutela de urgência e medida cautelar</li>
-              <li>Litígio contratual B2B e vício de produto/serviço</li>
-              <li>Mediação e arbitragem empresarial</li>
-            </ul>
-            <a href="#contato" class="svc-card__link">Analisar meu caso <span aria-hidden="true">→</span></a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- ═══════════════════════════════════════
-         ECOSYSTEM (Replacing "About Person")
-    ═══════════════════════════════════════ -->
-    <section class="about section" id="hub" aria-labelledby="about-title">
-      <div class="container">
-        <div class="about__grid">
-
-          <div class="about__visual reveal">
-            <div class="about__photo-frame">
-              <div class="about__photo-hub" role="img" aria-label="Visão do Hub">
-                <picture>
-                  <source srcset="assets/hub_team.avif" type="image/avif">
-                  <source srcset="assets/hub_team.webp" type="image/webp">
-                  <img src="assets/hub_team.png"
-                       alt="Equipe Consilium em reunião estratégica analisando soluções jurídicas para PMEs — advocacia empresarial especializada em Direito Civil Empresarial"
-                       loading="lazy"
-                       decoding="async"
-                       width="560"
-                       height="680"
-                       fetchpriority="low" />
-                </picture>
-                <div class="about__photo-hint">
-                  <span>Equipe de Especialistas Consilium</span>
-                </div>
-              </div>
-              <div class="about__hub-card">
-                <div class="about__oab-label">Hub Registrado</div>
-                <div class="about__oab-value">Ecossistema Jurídico</div>
-              </div>
-            </div>
-            <div class="about__visual-accent" aria-hidden="true"></div>
-          </div>
-
-          <div class="about__content reveal">
-            <span class="badge">O HUB CONSILIUM</span>
-            <h2 class="about__name" id="about-title">Advocacia empresarial especializada em PMEs</h2>
-            <p class="about__role">Direito Civil Empresarial · Direito Contratual · Direito Societário · Recuperação de Crédito</p>
-
-            <p class="about__bio">
-              A Consilium é um hub de advocacia empresarial: conectamos empresários
-              de pequenas e médias empresas — empresário individual, Sociedade Limitada
-              (LTDA), Sociedade Unipessoal e empresa familiar com faturamento entre
-              R$ 500 mil e R$ 20 milhões/ano — a um escritório parceiro especializado
-              na área exata do caso.
-            </p>
-            <p class="about__bio">
-              Nosso hub cobre o núcleo operacional do Direito Civil Empresarial:
-              elaboração e revisão de contratos comerciais, cobrança e recuperação
-              de crédito (extrajudicial e judicial), responsabilidade civil empresarial,
-              estruturação societária e holding patrimonial, adequação à LGPD. Os
-              escritórios parceiros aplicam Código Civil, Código de Processo Civil,
-              Lei das Sociedades por Ações e Lei de Liberdade Econômica na realidade
-              de quem fatura e opera todos os dias.
-            </p>
-            <p class="about__bio">
-              O processo é simples: você descreve a situação, fazemos um diagnóstico
-              estruturado e conectamos sua empresa ao escritório parceiro com o perfil
-              correto — por especialidade, tipo de caso e disponibilidade. Os escritórios
-              da rede são registrados na OAB, sujeitos ao Código de Ética da Advocacia
-              e selecionados por histórico de atuação com PMEs.
-            </p>
-
-            <ul class="about__creds">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7l3.5 3.5 6.5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Pós-graduação em Direito Empresarial e Contratual
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7l3.5 3.5 6.5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Atuação em Vara Cível, Vara Empresarial e câmara de arbitragem
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7l3.5 3.5 6.5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Cases documentados em direito contratual, cobrança e responsabilidade civil
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M2 7l3.5 3.5 6.5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Conexão com escritório parceiro especialista no seu caso
-              </li>
-            </ul>
-
-            <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
-              <a href="#contato" class="btn btn--primary">Agendar Diagnóstico Jurídico</a>
-              <a href="/sobre" class="btn btn--ghost">Conheça a Consilium</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         CASES — Arco narrativo: Problema → Abordagem → Resultado
-         Estrutura de prova social de maior peso (pesquisa SpiderRank)
-    ═══════════════════════════════════════ -->
-    <section class="testimonials section section--alt" id="setores" aria-labelledby="testi-title">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="badge reveal">CASOS DE ATUAÇÃO EM DIREITO EMPRESARIAL</span>
-          <h2 class="section-title reveal" id="testi-title">
-            Estudos de caso. Institutos jurídicos<br>específicos. Experiência prática.
-          </h2>
-          <p class="section-sub reveal">
-            Casos consolidados nos últimos 24 meses, apresentados com preservação
-            de sigilo profissional e sem identificação individual de clientes.
-          </p>
-        </div>
-
-        <div class="testi__grid">
-
-          <article class="testi-card reveal" style="padding-top: 28px;">
-            <div class="badge" style="margin-bottom: 18px; font-size: 10px;">DISTRIBUIDORA · LTDA · R$ 8M/ANO</div>
-            <h3 class="pain-card__title" style="font-size: 18px; margin-bottom: 14px;">Recuperação de R$ 112 mil em crédito inadimplido via ação executiva</h3>
-            <p class="testi-card__text" style="font-style: normal; text-align: left;">
-              <strong>Situação:</strong> R$ 140 mil em crédito inadimplido acumulado há mais
-              de 120 dias. Cobrança amigável esgotada, prescrição do CPC se aproximando
-              em duplicatas e notas promissórias antigas.
-              <br><br>
-              <strong>Abordagem:</strong> Estruturação de ação executiva com base em título
-              executivo extrajudicial, combinada com protesto de título, pesquisa
-              patrimonial e penhora online via Sisbajud.
-              <br><br>
-              <strong>Resultado:</strong> R$ 112 mil recuperados em menos de 5 meses,
-              com impacto direto no capital de giro e no fluxo mensal da empresa.
-            </p>
-          </article>
-
-          <article class="testi-card reveal" style="padding-top: 28px;">
-            <div class="badge" style="margin-bottom: 18px; font-size: 10px;">PRESTAÇÃO DE SERVIÇOS B2B · LTDA · R$ 4M/ANO</div>
-            <h3 class="pain-card__title" style="font-size: 18px; margin-bottom: 14px;">Due diligence contratual em contrato de distribuição de R$ 1,2 milhão/ano</h3>
-            <p class="testi-card__text" style="font-style: normal; text-align: left;">
-              <strong>Situação:</strong> Contrato de distribuição de R$ 1,2 milhão/ano na mesa
-              de negociação. Minuta de 22 páginas enviada pelo parceiro, com pressão
-              comercial para assinatura imediata.
-              <br><br>
-              <strong>Abordagem:</strong> Due diligence contratual em 72h. Identificação de
-              3 cláusulas críticas — exclusividade desbalanceada, cláusula penal
-              desproporcional e cláusula de não concorrência excessiva — e renegociação
-              ponto a ponto com base no Código Civil e na boa-fé objetiva.
-              <br><br>
-              <strong>Resultado:</strong> Cláusulas redesenhadas antes da assinatura.
-              Honorários de escopo fechado marginais frente à exposição patrimonial prevenida.
-            </p>
-          </article>
-
-          <article class="testi-card reveal" style="padding-top: 28px;">
-            <div class="badge" style="margin-bottom: 18px; font-size: 10px;">CONSTRUÇÃO CIVIL · LTDA · R$ 12M/ANO</div>
-            <h3 class="pain-card__title" style="font-size: 18px; margin-bottom: 14px;">Defesa em ação indenizatória de R$ 90 mil encerrada por acordo mínimo</h3>
-            <p class="testi-card__text" style="font-style: normal; text-align: left;">
-              <strong>Situação:</strong> Ação indenizatória de R$ 90 mil por suposto vício
-              de serviço em obra entregue. Citação recebida com 11 dias restantes
-              para contestação, risco de revelia processual iminente.
-              <br><br>
-              <strong>Abordagem:</strong> Contestação estratégica fundamentada em
-              excludentes de responsabilidade, com produção de prova pericial técnica
-              e demonstração documental do termo de aceitação da obra.
-              <br><br>
-              <strong>Resultado:</strong> Litígio encerrado por acordo mínimo no primeiro
-              semestre, preservando caixa, reputação técnica e contratos em andamento
-              da empresa no segmento de construção civil.
-            </p>
-          </article>
-
-        </div>
-
-        <p class="reveal" style="text-align:center; margin-top: 48px; font-size: 13px; color: var(--text-muted); max-width: 640px; margin-inline: auto; line-height: 1.65;">
-          Os casos acima referem-se a situações específicas atendidas pelo Hub e
-          <strong style="color: var(--text-secondary);">não constituem garantia de resultado</strong>
-          em casos futuros. Cada situação exige análise técnica própria antes da definição
-          de estratégia processual ou extrajudicial.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         OBJEÇÕES HONESTAS
-         Quebra das 6 resist\u00eancias mapeadas no deep buyer persona
-    ═══════════════════════════════════════ -->
-    <section class="pain section" id="perguntas" aria-labelledby="faq-title">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="badge reveal">PERGUNTAS FREQUENTES EM ADVOCACIA EMPRESARIAL</span>
-          <h2 class="section-title reveal" id="faq-title">
-            O que o empresário pensa antes<br>de contratar advocacia empresarial
-          </h2>
-          <p class="section-sub reveal">
-            Respondemos antes que você precise perguntar.
-          </p>
-        </div>
-
-        <div class="pain__grid pain__grid--two">
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q1</div>
-            <h3 class="pain-card__title">"Isso não é caro para o porte da minha empresa?"</h3>
-            <p class="pain-card__body">
-              PMEs com faturamento entre R$ 500 mil e R$ 20 milhões/ano investem,
-              em média, 0,5% a 3% do faturamento em assessoria jurídica empresarial.
-              O custo de <em>não ter</em> é tipicamente 10 a 30 vezes maior — um
-              descumprimento contratual não prevenido, uma prescrição consumada
-              ou uma revelia processual custam mais que anos de assessoria.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q2</div>
-            <h3 class="pain-card__title">"Já contratei advogado antes e não resolveu."</h3>
-            <p class="pain-card__body">
-              A diferença está em três pontos: (1) foco exclusivo em Direito Civil
-              Empresarial — não somos generalistas; (2) diagnóstico jurídico
-              estruturado antes da execução — você sabe o prognóstico processual
-              antes de contratar; (3) comunicação em linguagem empresarial —
-              sem juridiquês, sem ruído.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q3</div>
-            <h3 class="pain-card__title">"Minha empresa é pequena demais para esse hub?"</h3>
-            <p class="pain-card__body">
-              Atendemos <strong>especificamente</strong> empresário individual,
-              Sociedade Limitada (LTDA) e empresa familiar com faturamento entre
-              R$ 500 mil e R$ 20 milhões/ano. Esse é o porte com maior exposição
-              patrimonial sem estrutura interna para absorver — e onde a advocacia
-              empresarial preventiva tem maior impacto operacional.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q4</div>
-            <h3 class="pain-card__title">"Como funciona o honorário de êxito em cobrança?"</h3>
-            <p class="pain-card__body">
-              Em cobrança empresarial, o modelo mais comum é o honorário misto:
-              uma parcela fixa para estruturação da ação de cobrança (ou ação
-              executiva com título executivo extrajudicial) e um percentual de
-              êxito sobre o valor efetivamente recuperado. Em alguns perfis de
-              carteira, operamos em êxito puro — alinhando risco e resultado.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q5</div>
-            <h3 class="pain-card__title">"Título executivo — quais documentos valem?"</h3>
-            <p class="pain-card__body">
-              Título executivo extrajudicial é todo documento com força de execução
-              imediata reconhecida pelo CPC: cheque, nota promissória, duplicata
-              aceita, contrato assinado por duas testemunhas, confissão de dívida.
-              Documentos sem força executiva (e-mails, mensagens, notas fiscais
-              isoladas) vão para a ação monitória, com rito próprio.
-            </p>
-          </article>
-
-          <article class="pain-card reveal">
-            <div class="pain-card__num" aria-hidden="true">Q6</div>
-            <h3 class="pain-card__title">"Melhor não mexer — vou piorar o problema?"</h3>
-            <p class="pain-card__body">
-              O problema já está agindo contra você, mesmo parado. Cláusula
-              contratual frágil já está exposta. Crédito inadimplido já está
-              caminhando para prescrição. Citação judicial já está correndo
-              prazo de contestação — e a revelia processual elimina a defesa.
-              A ação estratégica reduz o risco; a inércia apenas multiplica.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         EXCLUSÃO — "is-not / distinct-from" (Grafo Cat. 14)
-         Sinal semântico de especialização: delimita escopo e evita
-         diluição do grafo de "advogado empresarial" para "advogado genérico"
-    ═══════════════════════════════════════ -->
-    <section class="section section--alt" id="escopo" aria-labelledby="escopo-title" style="padding-block: 80px;">
+    <section class="section" id="responsavel-tecnico" aria-labelledby="rt-title" style="padding-block: 72px;">
       <div class="container" style="max-width: 960px;">
-        <div class="section-header reveal" style="margin-bottom: 40px;">
-          <span class="badge">ESCOPO DE ATUAÇÃO</span>
-          <h2 class="section-title" id="escopo-title" style="font-size: clamp(26px, 3vw, 36px);">
-            O que a Consilium não atende
-          </h2>
-          <p class="section-sub">
-            Especialização real exige delimitar escopo. A advocacia civil empresarial
-            para PMEs é uma disciplina distinta das áreas abaixo — e a confusão entre elas
-            é o que mais custa ao empresário.
-          </p>
+        <div class="rt-grid reveal" style="display: grid; grid-template-columns: minmax(180px, 240px) 1fr; gap: 36px; align-items: start;">
+
+          <figure class="rt-photo" style="margin: 0;">
+            <picture>
+              <source type="image/avif" srcset="/assets/grothperfil-480.avif 480w, /assets/grothperfil-960.avif 960w" sizes="(max-width: 600px) 60vw, 240px">
+              <source type="image/webp" srcset="/assets/grothperfil-480.webp 480w, /assets/grothperfil-960.webp 960w" sizes="(max-width: 600px) 60vw, 240px">
+              <img
+                src="/assets/grothperfil-960.jpg"
+                alt="Giancarlo Groth, advogado responsável técnico da Consilium"
+                width="240" height="320"
+                loading="lazy" decoding="async"
+                style="width: 100%; height: auto; border-radius: 8px; display: block;">
+            </picture>
+          </figure>
+
+          <div class="rt-body">
+            <p class="badge" style="margin-bottom: 12px;">RESPONSÁVEL TÉCNICO</p>
+            <h2 class="section-title" id="rt-title" style="font-size: clamp(24px, 2.8vw, 32px); margin: 0 0 6px;">Giancarlo Groth</h2>
+            <p style="font-family: var(--ff-body); color: var(--text-secondary); margin: 0 0 16px; font-size: 14.5px;">
+              Advogado &middot; Responsável técnico &middot; <strong>OAB/__&nbsp;_____</strong>
+            </p>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 18px; color: var(--text-primary);">
+              Atua em direito empresarial com foco em pequenas e médias empresas, em quatro frentes: recuperação de crédito B2B, planejamento sucessório com holding familiar, revisão de contratos empresariais e acordo de sócios. Responsável técnico pela Consilium, conduz o diagnóstico inicial dos casos e a conexão da empresa à atuação jurídica especializada na frente correspondente.
+            </p>
+            <p style="margin: 0;">
+              <a href="#responsavel-tecnico" class="rt-link" style="font-size: 14px; color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Ver perfil do responsável técnico &rarr;</a>
+              <!-- TODO substituir href por /sobre quando pagina de autor for publicada -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         AS 4 FRENTES · ZONA PRATA (30-70%)
+         Cada uma: H2-pergunta + answer capsule + link para hub
+    ═══════════════════════════════════════ -->
+    <section class="section section--alt" id="solucoes" aria-labelledby="solucoes-title" style="padding-block: 80px;">
+      <div class="container" style="max-width: 960px;">
+        <div class="section-header reveal" style="margin-bottom: 48px;">
+          <span class="badge">AS QUATRO FRENTES</span>
+          <h2 class="section-title" id="solucoes-title" style="font-size: clamp(26px, 3vw, 36px); margin-top: 8px;">Onde a Consilium atua</h2>
         </div>
 
-        <div class="reveal" style="background: var(--bg-card); border: 1px solid var(--border-sub); border-radius: var(--r-lg); padding: 32px;">
-          <p style="font-size: 15px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 20px;">
-            <strong style="color: var(--text-primary);">Não atuamos em:</strong>
-            Direito do Trabalho · Direito Criminal · Direito Previdenciário ·
-            Direito de Família e Sucessões (pessoa física) · Direito do Consumidor
-            (defesa de consumidor-pessoa-física contra empresa) · Direito Tributário
-            puro (sobreposição parcial em temas empresariais) · causas de massa ou
-            varejo jurídico.
-          </p>
-          <p style="font-size: 15px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 20px;">
-            <strong style="color: var(--text-primary);">Não somos escritório de grande corporação:</strong>
-            não atendemos fusões e aquisições de grande porte (M&amp;A), operações
-            estruturadas de mercado de capitais ou contencioso estratégico de holdings
-            multinacionais. Essas operações exigem estrutura de Big Law, não de hub boutique.
-          </p>
-          <p style="font-size: 15px; line-height: 1.75; color: var(--text-secondary); margin: 0;">
-            <strong style="color: var(--text-primary);">Complementaridade profissional:</strong>
-            trabalhamos em parceria com contador, consultor empresarial, auditor
-            e agente de propriedade intelectual, mas não substituímos essas
-            funções. Cada profissional tem escopo próprio — e a sobreposição
-            gera risco, não eficiência.
-          </p>
+        <div class="solucoes-grid reveal" style="display: grid; gap: 32px;">
+
+          <article style="border-left: 3px solid var(--gold, #C09030); padding: 20px 28px;">
+            <h2 style="font-family: var(--ff-display); font-size: clamp(20px, 2.2vw, 26px); margin: 0 0 12px;">Como recuperar um crédito que outra empresa não paga?</h2>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 14px;">A recuperação de crédito B2B reúne cobrança extrajudicial, ação monitória e execução de título executivo para débitos entre empresas. A escolha do instrumento depende do documento que lastreia a dívida e do perfil do devedor. <strong>[VALIDAR: índice de inadimplência B2B, Serasa Experian, ano]</strong>. O foco é débito de médio e alto ticket.</p>
+            <p style="margin: 0;"><a href="/servicos/cobranca-empresarial" style="font-size: 14px; color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Cobrança empresarial &rarr;</a></p>
+          </article>
+
+          <article style="border-left: 3px solid var(--gold, #C09030); padding: 20px 28px;">
+            <h2 style="font-family: var(--ff-display); font-size: clamp(20px, 2.2vw, 26px); margin: 0 0 12px;">Quando vale estruturar uma holding familiar?</h2>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 14px;">A holding familiar organiza a sucessão de empresas com múltiplos herdeiros, integrando estrutura societária, governança e planejamento tributário. Antecipa a partilha e reduz o risco de disputa entre herdeiros sobre o controle do negócio. Aplica-se a patrimônio empresarial relevante. <strong>[VALIDAR: percentual de empresas familiares que chegam à 3ª geração, Sebrae, ano]</strong>.</p>
+            <p style="margin: 0;"><a href="/servicos/planejamento-sucessorio-empresarial" style="font-size: 14px; color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Planejamento sucessório empresarial &rarr;</a></p>
+          </article>
+
+          <article style="border-left: 3px solid var(--gold, #C09030); padding: 20px 28px;">
+            <h2 style="font-family: var(--ff-display); font-size: clamp(20px, 2.2vw, 26px); margin: 0 0 12px;">O que revisar em um contrato empresarial?</h2>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 14px;">A revisão de contratos B2B examina cláusulas de limitação de responsabilidade, multa, reajuste, foro e rescisão em contratos de fornecimento, distribuição e prestação de serviços. A atuação preventiva reduz litígio futuro. Parte significativa dos conflitos nasce de instrumento mal redigido. <strong>[VALIDAR: percentual de litígios B2B com origem em contrato mal redigido, CNJ, ano]</strong>.</p>
+            <p style="margin: 0;"><a href="/servicos/revisao-de-contratos-empresariais" style="font-size: 14px; color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Revisão de contratos empresariais &rarr;</a></p>
+          </article>
+
+          <article style="border-left: 3px solid var(--gold, #C09030); padding: 20px 28px;">
+            <h2 style="font-family: var(--ff-display); font-size: clamp(20px, 2.2vw, 26px); margin: 0 0 12px;">Para que serve um acordo de sócios?</h2>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 14px;">O acordo de sócios define regras de entrada e saída, tag along, drag along, resolução de impasse (deadlock) e apuração de haveres. Sem ele, conflitos societários ficam sujeitos a regras genéricas da Lei das S/A e do Código Civil. Estrutura a sociedade antes da crise.</p>
+            <p style="margin: 0;"><a href="/servicos/acordo-de-socios-e-estruturacao-societaria" style="font-size: 14px; color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Acordo de sócios e estruturação societária &rarr;</a></p>
+          </article>
+
         </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         COMO FUNCIONA A CONSILIUM · ZONA PRATA
+         Transparência = redução de ansiedade
+    ═══════════════════════════════════════ -->
+    <section class="section" id="como-funciona" aria-labelledby="cf-title" style="padding-block: 72px;">
+      <div class="container" style="max-width: 760px;">
+        <h2 class="section-title" id="cf-title" style="font-size: clamp(24px, 2.8vw, 32px); margin: 0 0 18px;">Como funciona a Consilium?</h2>
+        <p style="font-size: 15.5px; line-height: 1.72; margin: 0;">A Consilium faz o diagnóstico técnico do caso e conecta o empresário à atuação jurídica especializada na frente correspondente, sob responsabilidade técnica do advogado Giancarlo Groth (OAB/__&nbsp;_____). O contato inicial é por avaliação de viabilidade do caso.</p>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         FAQ · ZONA PRATA (subir, nao deixar no fim)
+         Cada Q&A: mini-capsule 40-60 palavras
+    ═══════════════════════════════════════ -->
+    <section class="section section--alt" id="perguntas" aria-labelledby="faq-title" style="padding-block: 80px;">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-header reveal" style="margin-bottom: 40px;">
+          <span class="badge">PERGUNTAS FREQUENTES</span>
+          <h2 class="section-title" id="faq-title" style="font-size: clamp(26px, 3vw, 36px); margin-top: 8px;">Antes de avaliar o caso</h2>
+        </div>
+
+        <div class="faq-grid reveal" style="display: grid; gap: 24px;">
+
+          <article>
+            <h2 style="font-family: var(--ff-display); font-size: clamp(19px, 2vw, 23px); margin: 0 0 10px;">A Consilium é um escritório de advocacia?</h2>
+            <p style="font-size: 15px; line-height: 1.7; margin: 0;">A Consilium é uma estrutura jurídica empresarial que conecta empresas à atuação especializada em quatro frentes do direito empresarial. O responsável técnico é o advogado Giancarlo Groth (OAB/__&nbsp;_____), que conduz o diagnóstico inicial e a definição do plano técnico de atuação.</p>
+          </article>
+
+          <article>
+            <h2 style="font-family: var(--ff-display); font-size: clamp(19px, 2vw, 23px); margin: 0 0 10px;">Quem é o responsável técnico?</h2>
+            <p style="font-size: 15px; line-height: 1.7; margin: 0;">O advogado Giancarlo Groth, inscrito na <strong>OAB/__&nbsp;_____</strong>, é o responsável técnico pela Consilium. Atua em direito empresarial, com foco em pequenas e médias empresas, nas quatro frentes da estrutura: cobrança B2B, planejamento sucessório, contratos empresariais e acordo de sócios.</p>
+          </article>
+
+          <article>
+            <h2 style="font-family: var(--ff-display); font-size: clamp(19px, 2vw, 23px); margin: 0 0 10px;">A Consilium atende empresas de que porte?</h2>
+            <p style="font-size: 15px; line-height: 1.7; margin: 0;">O foco é direito empresarial para pequenas e médias empresas, em geral com faturamento entre R$ 500 mil e R$ 20 milhões por ano. Operações de grande porte (M&amp;A relevante, mercado de capitais) e causas de massa estão fora do escopo declarado de atuação.</p>
+          </article>
+
+          <article>
+            <h2 style="font-family: var(--ff-display); font-size: clamp(19px, 2vw, 23px); margin: 0 0 10px;">Como começa o atendimento?</h2>
+            <p style="font-size: 15px; line-height: 1.7; margin: 0;">O contato inicial é por avaliação de viabilidade do caso. A empresa descreve a situação; a Consilium retorna com diagnóstico técnico preliminar e a frente correspondente. A partir daí, o atendimento é conduzido pelo responsável técnico ou pela atuação especializada articulada na estrutura.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         COBERTURA GEOGRÁFICA · ZONA BRONZE (70-90%)
+         Lista enxuta com link para hubs
+    ═══════════════════════════════════════ -->
+    <section class="section" id="cobertura" aria-labelledby="cob-title" style="padding-block: 64px;">
+      <div class="container" style="max-width: 820px;">
+        <h2 class="section-title" id="cob-title" style="font-size: clamp(22px, 2.4vw, 28px); margin: 0 0 16px;">Estados e regiões atendidos</h2>
+        <p style="font-size: 15px; line-height: 1.7; margin: 0 0 24px;">A Consilium atende empresas em Paraná, Rio de Janeiro, Minas Gerais e Santa Catarina. As páginas regionais detalham a frente correspondente por cidade.</p>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <li><a href="/servicos/cobranca-empresarial" style="color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Cobrança empresarial &rarr;</a></li>
+          <li><a href="/servicos/planejamento-sucessorio-empresarial" style="color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Planejamento sucessório &rarr;</a></li>
+          <li><a href="/servicos/revisao-de-contratos-empresariais" style="color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Revisão de contratos &rarr;</a></li>
+          <li><a href="/servicos/acordo-de-socios-e-estruturacao-societaria" style="color: var(--gold, #C09030); text-decoration: none; border-bottom: 1px solid currentColor;">Acordo de sócios &rarr;</a></li>
+        </ul>
       </div>
     </section>
 
