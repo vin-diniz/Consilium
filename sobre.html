@@ -77,8 +77,10 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
   <!-- ═══════════════════════════════════════════════════
-       SCHEMA.ORG · GRAPH DA PÁGINA SOBRE
-       Arquitetura: AboutPage → Organization → HowTo → FAQPage
+       SCHEMA.ORG · GRAPH DA PÁGINA /SOBRE
+       ProfilePage do responsável técnico (Giancarlo Groth)
+       Person canonico #giancarlo como mainEntity; resolve referencia
+       orfa de 279 paginas que apontam Person.url -> /sobre.
   ═══════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
@@ -111,6 +113,7 @@
         },
         "description": "Hub de advocacia empresarial que conecta pequenas e médias empresas a escritórios parceiros especializados em Direito Civil Empresarial.",
         "disambiguatingDescription": "Consilium Hub de Advocacia Empresarial para PMEs — não confundir com Consilium Soluções Empresariais (consultoria de dados/BI), Consilium BR (governança corporativa) ou Consilium Abogados (Sevilha, Espanha).",
+        "founder": { "@id": "https://www.consiliumadvogados.com.br/#giancarlo" },
         "memberOf": {
           "@type": "Organization",
           "name": "Ordem dos Advogados do Brasil",
@@ -125,18 +128,42 @@
       },
 
       {
-        "@type": "AboutPage",
-        "@id": "https://www.consiliumadvogados.com.br/sobre#aboutpage",
+        "@id": "https://www.consiliumadvogados.com.br/#giancarlo",
+        "@type": "Person",
+        "name": "Giancarlo Groth",
+        "jobTitle": "Advogado · Responsável técnico",
+        "description": "Advogado dedicado ao direito empresarial, com cinco anos de atuação em cobrança B2B, sucessão, contratos e acordos de sócios. Responsável técnico da Consilium.",
+        "image": "https://www.consiliumadvogados.com.br/assets/grothperfil-960.webp",
+        "worksFor": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
+        "alumniOf": "[instituição]",
+        "knowsAbout": [
+          "direito empresarial",
+          "recuperação de crédito B2B",
+          "planejamento sucessório",
+          "holding familiar",
+          "revisão de contratos empresariais",
+          "acordo de sócios",
+          "estruturação societária"
+        ],
+        "identifier": "OAB/PR 122.982",
         "url": "https://www.consiliumadvogados.com.br/sobre",
-        "name": "Sobre a Consilium | Hub que Conecta PMEs a Escritórios Parceiros",
-        "description": "Conheça a Consilium: hub de advocacia empresarial que conecta PMEs a escritórios parceiros especializados em Direito Civil Empresarial.",
+        "sameAs": ["https://giacomelliadvocacia.com.br"],
+        "mainEntityOfPage": { "@id": "https://www.consiliumadvogados.com.br/sobre#profilepage" }
+      },
+
+      {
+        "@type": "ProfilePage",
+        "@id": "https://www.consiliumadvogados.com.br/sobre#profilepage",
+        "url": "https://www.consiliumadvogados.com.br/sobre",
+        "name": "Giancarlo Groth · Responsável técnico da Consilium",
+        "description": "Página do responsável técnico da Consilium: Giancarlo Groth, advogado inscrito na OAB/PR 122.982, com cinco anos de atuação em direito empresarial para PMEs.",
         "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/#website" },
-        "about": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
-        "mainEntity": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
+        "about": { "@id": "https://www.consiliumadvogados.com.br/#giancarlo" },
+        "mainEntity": { "@id": "https://www.consiliumadvogados.com.br/#giancarlo" },
         "breadcrumb": { "@id": "https://www.consiliumadvogados.com.br/sobre#breadcrumb" },
         "inLanguage": "pt-BR",
         "datePublished": "2026-04-19T00:00:00-03:00",
-        "dateModified": "2026-04-19T00:00:00-03:00",
+        "dateModified": "2026-06-18T00:00:00-03:00",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://www.consiliumadvogados.com.br/assets/og-image.jpg",
@@ -167,8 +194,8 @@
         "description": "Manifesto do hub Consilium sobre o posicionamento institucional no mercado brasileiro de advocacia empresarial, focado em pequenas e médias empresas (PMEs) com faturamento entre R$ 500 mil e R$ 20 milhões/ano.",
         "articleSection": "Manifesto Institucional",
         "articleBody": "O empresário brasileiro de PME está preso entre duas realidades que não foram desenhadas para ele: o advogado generalista que atende qualquer demanda sem especialização, e o escritório Big Law estruturado para grandes corporações. A Consilium foi desenhada para fechar esse vão: identifica a especialidade jurídica correta para o caso e conecta a empresa ao escritório parceiro que efetivamente atua naquela área para empresas do seu porte.",
-        "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/sobre#aboutpage" },
-        "mainEntityOfPage": { "@id": "https://www.consiliumadvogados.com.br/sobre#aboutpage" },
+        "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/sobre#profilepage" },
+        "mainEntityOfPage": { "@id": "https://www.consiliumadvogados.com.br/sobre#profilepage" },
         "author": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
         "publisher": { "@id": "https://www.consiliumadvogados.com.br/#organization" },
         "datePublished": "2026-04-19T00:00:00-03:00",
@@ -297,7 +324,7 @@
       {
         "@type": "FAQPage",
         "@id": "https://www.consiliumadvogados.com.br/sobre#faq-sobre",
-        "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/sobre#aboutpage" },
+        "isPartOf": { "@id": "https://www.consiliumadvogados.com.br/sobre#profilepage" },
         "inLanguage": "pt-BR",
         "mainEntity": [
           {
@@ -471,6 +498,49 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         RESPONSÁVEL TÉCNICO · ProfilePage mainEntity #giancarlo
+         Bloco visivel com foto/bio/OAB para materializar Person.url -> /sobre
+    ═══════════════════════════════════════ -->
+    <section class="section" id="responsavel-tecnico" aria-labelledby="rt-title" style="padding-block: 72px;">
+      <div class="container" style="max-width: 960px;">
+        <div class="rt-grid reveal" style="display: grid; grid-template-columns: minmax(180px, 240px) 1fr; gap: 36px; align-items: start;">
+
+          <figure class="rt-photo" style="margin: 0;">
+            <picture>
+              <source type="image/avif" srcset="/assets/grothperfil-480.avif 480w, /assets/grothperfil-960.avif 960w" sizes="(max-width: 600px) 60vw, 240px">
+              <source type="image/webp" srcset="/assets/grothperfil-480.webp 480w, /assets/grothperfil-960.webp 960w" sizes="(max-width: 600px) 60vw, 240px">
+              <img
+                src="/assets/grothperfil-960.jpg"
+                alt="Giancarlo Groth, advogado responsável técnico da Consilium"
+                width="240" height="320"
+                loading="eager" decoding="async"
+                style="width: 100%; height: auto; border-radius: 8px; display: block;">
+            </picture>
+          </figure>
+
+          <div class="rt-body">
+            <p class="badge" style="margin-bottom: 12px;">RESPONSÁVEL TÉCNICO</p>
+            <h2 class="section-title" id="rt-title" style="font-size: clamp(28px, 3.2vw, 38px); margin: 0 0 6px;">Giancarlo Groth</h2>
+            <p style="font-family: var(--ff-body); color: var(--text-secondary); margin: 0 0 18px; font-size: 14.5px;">
+              Advogado &middot; Responsável técnico &middot; <strong>OAB/PR&nbsp;122.982</strong>
+            </p>
+            <p style="font-size: 16px; line-height: 1.72; margin: 0 0 16px; color: var(--text-primary);">
+              Advogado dedicado ao direito empresarial, com cinco anos de atuação em cobrança B2B, sucessão, contratos e acordos de sócios. Responsável técnico pela Consilium, conduz o diagnóstico inicial dos casos e a conexão da empresa à atuação jurídica especializada na frente correspondente.
+            </p>
+            <p style="font-size: 15px; line-height: 1.72; margin: 0 0 16px; color: var(--text-secondary);">
+              A atuação cobre quatro frentes do direito empresarial: recuperação de crédito B2B, planejamento sucessório com holding familiar, revisão de contratos empresariais e acordo de sócios &mdash; sempre com prática preventiva e técnica, em PMEs com faturamento entre R$ 500 mil e R$ 20 milhões por ano.
+            </p>
+            <p style="font-size: 14px; line-height: 1.7; margin: 0; color: var(--text-muted, rgba(244,239,228,0.7));">
+              Inscrição ativa na <strong>Ordem dos Advogados do Brasil, Seccional Paraná (OAB/PR&nbsp;122.982)</strong>. Conforme Provimento 205/2021 do Conselho Federal da OAB.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
