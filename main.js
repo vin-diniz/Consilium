@@ -205,100 +205,10 @@ phoneInput?.addEventListener('input', function () {
 });
 
 
-/* ── CONTACT FORM (Web3Forms) ────────────────────────── */
-const form        = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
+/* Form handler movido para /assets/js/contact.js (Tarefa A do hardening de seguranca). */
 
-form?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  if (!validateForm()) return;
 
-  const btn = form.querySelector('button[type="submit"]');
-  const originalBtnHTML = btn.innerHTML;
-
-  btn.disabled = true;
-  btn.innerHTML = `
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="spin">
-      <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2" stroke-dasharray="20 18"/>
-    </svg>
-    Enviando...
-  `;
-
-  // Honeypot: se foi marcado (bot), abortar silenciosamente sem dar sinal
-  if (form.botcheck?.checked) {
-    form.hidden = true;
-    formSuccess.hidden = false;
-    return;
-  }
-
-  // Metadados minimos (LGPD: minimizacao de dados — sem user-agent)
-  const payload = new FormData(form);
-  payload.append('page_url', window.location.href);
-  payload.append('submitted_at', new Date().toISOString());
-
-  try {
-    const res = await fetch(form.action, {
-      method: 'POST',
-      body: payload,
-      headers: { 'Accept': 'application/json' },
-    });
-    const json = await res.json().catch(() => ({}));
-
-    if (res.ok && json.success) {
-      form.hidden = true;
-      formSuccess.hidden = false;
-      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      form.reset();
-    } else {
-      throw new Error(json.message || 'Falha no envio');
-    }
-  } catch (err) {
-    console.error('[Consilium] Erro no envio:', err);
-    alert('Não foi possível enviar agora. Tente novamente em instantes ou escreva para acesso@consiliumadvogados.com.br.');
-    btn.disabled = false;
-    btn.innerHTML = originalBtnHTML;
-  }
-});
-
-function validateForm() {
-  let valid = true;
-  let firstInvalid = null;
-  const required = form.querySelectorAll('[required]');
-
-  required.forEach(field => {
-    // Para checkbox exige marcado; para texto/select exige valor nao-vazio
-    const isInvalid = field.type === 'checkbox'
-      ? !field.checked
-      : !field.value.trim();
-
-    field.classList.toggle('error', isInvalid);
-
-    if (isInvalid) {
-      valid = false;
-      if (!firstInvalid) firstInvalid = field;
-    } else {
-      field.addEventListener(
-        field.type === 'checkbox' ? 'change' : 'input',
-        () => field.classList.remove('error'),
-        { once: true }
-      );
-    }
-  });
-
-  // Validacao de pattern (regex do phone)
-  const phone = form.querySelector('input[name="phone"]');
-  if (phone && phone.value.trim() && phone.pattern) {
-    const re = new RegExp(phone.pattern);
-    if (!re.test(phone.value.trim())) {
-      phone.classList.add('error');
-      valid = false;
-      if (!firstInvalid) firstInvalid = phone;
-    }
-  }
-
-  if (firstInvalid) firstInvalid.focus();
-  return valid;
-}
+/* validateForm() tambem migrou para /assets/js/contact.js. */
 
 
 /* ── SMOOTH SCROLL for anchors ───────────────────────── */
@@ -312,10 +222,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-/* ── CSS: spinner for button ─────────────────────────── */
-const spinStyle = document.createElement('style');
-spinStyle.textContent = `
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .spin { animation: spin 0.8s linear infinite; }
-`;
-document.head.appendChild(spinStyle);
+/* Spinner CSS movido para style.css (Tarefa A do hardening de seguranca). */

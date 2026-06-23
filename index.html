@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
 
-  <!-- ─── SEGURANÇA — CSP + HARDENING ────────────────── -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; form-action https://api.web3forms.com 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Headers de seguranca (CSP, HSTS, X-Content-Type-Options, Referrer-Policy,
+       Permissions-Policy, X-Frame-Options) sao servidos via /_headers (Cloudflare
+       Pages). Headers HTTP reais sao mais fortes que meta http-equiv. -->
 
   <!-- ─── TÍTULO & DESCRIÇÃO ─────────────────────────── -->
   <title>Advocacia Empresarial para PMEs | Consilium Hub Jurídico</title>
@@ -355,8 +354,7 @@
              class="btn btn--primary"
              data-cta-primario="whatsapp"
              target="_blank"
-             rel="noopener nofollow"
-             onclick="window.dataLayer&&window.dataLayer.push({event:'whatsapp_cta',page_path:location.pathname});">
+             rel="noopener nofollow">
             Avaliar a viabilidade do meu caso
           </a>
           <a href="/#contato" class="btn btn--ghost">Enviar pelo formulário</a>
@@ -427,8 +425,7 @@
              class="btn btn--primary"
              data-cta-primario="whatsapp"
              target="_blank"
-             rel="noopener nofollow"
-             onclick="window.dataLayer&&window.dataLayer.push({event:'whatsapp_cta',page_path:location.pathname});">
+             rel="noopener nofollow">
             Avaliar a viabilidade do meu caso
           </a>
           <a href="/#contato" class="btn btn--ghost">Enviar pelo formulário</a>
@@ -483,8 +480,7 @@
              class="btn btn--primary btn--large"
              data-cta-primario="whatsapp"
              target="_blank"
-             rel="noopener nofollow"
-             onclick="window.dataLayer&&window.dataLayer.push({event:'whatsapp_cta',page_path:location.pathname});">
+             rel="noopener nofollow">
             Avaliar a viabilidade do meu caso
           </a>
           <a href="/#contato" class="btn btn--ghost">Enviar pelo formulário</a>
@@ -581,14 +577,11 @@
           </div>
 
           <div class="contact__form-wrap reveal">
-            <form class="contact__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <form class="contact__form" id="contactForm" novalidate>
               <h3 class="contact__form-title">Solicitar Diagnóstico Estratégico</h3>
 
-              <!-- Web3Forms — config invisivel -->
-              <input type="hidden" name="access_key" value="9bc9a26e-1022-4ce7-9122-f650af981c46">
-              <input type="hidden" name="subject" value="Novo Diagnóstico — Consilium (consiliumadvogados.com.br)">
-              <input type="hidden" name="from_name" value="Consilium | Site">
-              <input type="hidden" name="redirect" value="false">
+              <!-- Backend: /api/contact (Cloudflare Pages Function). Chave do Web3Forms vive em variavel de ambiente do servidor. -->
+
 
               <!-- Honeypot anti-spam off-screen (humanos nao tabulam ate aqui; bots modernos caem nele) -->
               <div class="honeypot" aria-hidden="true">
@@ -644,6 +637,10 @@
                   </span>
                 </label>
               </div>
+
+              <!-- Cloudflare Turnstile (anti-bot). Site key publica; secret e validado pelo backend. -->
+              <!-- TODO Lucas: colar a Site Key real do Turnstile gerada no painel Cloudflare. -->
+              <div class="cf-turnstile" data-sitekey="__TURNSTILE_SITE_KEY__" data-theme="dark" data-language="pt-BR"></div>
 
               <button class="btn btn--primary btn--full" type="submit">
                 Agendar Diagnóstico Profissional
@@ -756,5 +753,9 @@
   </footer>
 
   <script src="main.js" defer></script>
+  <!-- Cloudflare Turnstile API + handler do form -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/assets/js/contact.js" defer></script>
+  <script src="/assets/js/cta-tracking.js" defer></script>
 </body>
 </html>
