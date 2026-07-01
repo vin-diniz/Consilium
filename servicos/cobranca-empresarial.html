@@ -369,10 +369,10 @@
           },
           {
             "@type": "Question",
-            "name": "Como funciona a estrutura de honorários na cobrança empresarial?",
+            "name": "Qual o custo real da inadimplência empresarial mantida no ativo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A estrutura de honorários advocatícios segue o Código de Ética da OAB e é negociada diretamente entre a empresa e o escritório parceiro. Os modelos mais comuns em cobrança empresarial são: honorário fixo (valor definido por etapa processual), honorário de êxito (percentual sobre o valor efetivamente recuperado) e honorário misto (fixo + êxito). A Consilium não estabelece nem cobra valores pelos serviços advocatícios."
+              "text": "O custo real da inadimplência combina três componentes: perda direta do valor da dívida corrigida, custo de oportunidade do capital imobilizado (o crédito parado deixa de girar) e desconto de prescrição — dívidas comerciais sem título executivo prescrevem em 5 anos (Art. 206, §5º, I do Código Civil), cheque em 6 meses para execução (Lei 7.357/1985) e a maioria dos títulos executivos extrajudiciais em 5 anos (Art. 206, §5º do Código Civil). Sem ação estruturada, o crédito envelhece até virar prejuízo contábil, com efeito direto sobre capital de giro e resultado do exercício."
             }
           }
         ]
@@ -850,52 +850,47 @@
     </section>
 
 
-    <!-- HONORARIOS (3 modalidades) -->
-    <section class="section section--alt" id="honorarios" aria-labelledby="howmuch-title">
+    <!-- CUSTO REAL DA INADIMPLENCIA (informativo, sem preco de servico) -->
+    <section class="section section--alt" id="custo-inadimplencia" aria-labelledby="custo-title">
       <div class="container">
         <div class="section-header">
-          <span class="badge reveal">MODALIDADES DE HONORÁRIOS</span>
-          <h2 class="section-title reveal" id="howmuch-title">
-            Modelos que se adaptam<br>ao perfil do crédito.
+          <span class="badge reveal">CUSTO REAL DA INADIMPLÊNCIA</span>
+          <h2 class="section-title reveal" id="custo-title">
+            Qual o custo real da inadimplência empresarial mantida no ativo?
           </h2>
           <p class="section-sub reveal">
-            Honorários advocatícios negociados diretamente entre a empresa
-            e o escritório parceiro, conforme Código de Ética da OAB.
-            A Consilium não estabelece nem cobra valores.
+            O crédito parado tem três custos que não aparecem no balanço até virarem prejuízo — perda de valor, custo de oportunidade e desconto de prescrição.
           </p>
         </div>
 
         <div class="services__grid">
           <article class="svc-card reveal">
-            <div class="svc-card__tag">MODALIDADE 01</div>
-            <h3 class="svc-card__title">Honorário fixo</h3>
+            <div class="svc-card__tag">COMPONENTE 01</div>
+            <h3 class="svc-card__title">Perda direta do crédito</h3>
             <p class="svc-card__body">
-              Valor definido por etapa processual. Aplicável quando há alta
-              probabilidade de recuperação e documentação sólida.
+              Correção monetária, juros de mora (1% ao mês, Art. 406 do Código Civil) e multa contratual quando prevista. Sem execução, esses acréscimos existem no papel — não no caixa.
             </p>
           </article>
           <article class="svc-card svc-card--featured reveal">
-            <div class="svc-card__featured-badge">Mais comum</div>
-            <div class="svc-card__tag">MODALIDADE 02</div>
-            <h3 class="svc-card__title">Honorário misto</h3>
+            <div class="svc-card__featured-badge">Impacto oculto</div>
+            <div class="svc-card__tag">COMPONENTE 02</div>
+            <h3 class="svc-card__title">Custo de oportunidade</h3>
             <p class="svc-card__body">
-              Parcela fixa para estruturação + percentual de êxito sobre o
-              recuperado. Balanceia compromisso e alinhamento de resultado.
+              Capital de giro imobilizado no crédito inadimplente deixa de girar em operação. Em PMEs com margens apertadas, cada mês de crédito parado retira recurso que poderia estar rodando o negócio.
             </p>
           </article>
           <article class="svc-card reveal">
-            <div class="svc-card__tag">MODALIDADE 03</div>
-            <h3 class="svc-card__title">Honorário de êxito</h3>
+            <div class="svc-card__tag">COMPONENTE 03</div>
+            <h3 class="svc-card__title">Desconto de prescrição</h3>
             <p class="svc-card__body">
-              Percentual sobre o valor efetivamente recuperado. Alinha
-              incentivos em carteiras mais desafiadoras.
+              Cheque prescreve para execução em 6 meses (Lei 7.357/1985). Dívidas líquidas em instrumento particular, em 5 anos (Art. 206, §5º, I do Código Civil). Prazo perdido, crédito perdido.
             </p>
           </article>
         </div>
 
         <div style="text-align:center; margin-top: 48px;">
           <a href="/#contato" class="btn btn--primary reveal">
-            Conversar Sobre o Modelo Ideal
+            Avaliar a viabilidade do meu caso
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -943,10 +938,14 @@
           </article>
           <article class="pain-card reveal">
             <div class="pain-card__num" aria-hidden="true">Q4</div>
-            <h3 class="pain-card__title">A Consilium cobra pelo encaminhamento?</h3>
+            <h3 class="pain-card__title">A partir de qual valor de crédito compensa estruturar cobrança judicial?</h3>
             <p class="pain-card__body">
-              Não. Honorários são negociados diretamente entre a empresa e o escritório
-              parceiro, conforme normas da OAB. A Consilium não estabelece nem cobra valores.
+              Não há valor legal mínimo. A decisão técnica combina qualidade do título
+              executivo (força probatória), perfil patrimonial do devedor (chance real
+              de satisfação) e prazo prescricional. Créditos com título forte e devedor
+              com patrimônio localizável tendem a justificar a via judicial mesmo em
+              valores intermediários; sem título ou patrimônio, mesmo créditos altos
+              exigem análise técnica antes.
             </p>
           </article>
         </div>
