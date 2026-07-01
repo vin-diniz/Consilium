@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Relatório de correções · SPIDERRANK v2.0 · Consilium</title>
+  <style>
+    /* ─── Design tokens ─── */
+    :root {
+      --bg:        #0B0A08;
+      --bg-alt:    #12100D;
+      --bg-card:   #171410;
+      --border:    #2a2520;
+      --gold:      #C09030;
+      --gold-soft: rgba(192,144,48,0.12);
+      --gold-line: rgba(192,144,48,0.35);
+      --text:      #F4EFE4;
+      --text-mute: rgba(244,239,228,0.68);
+      --ok:        #7BC77B;
+      --warn:      #E0A44A;
+      --err:       #E06565;
+      --radius:    10px;
+      --maxw:      960px;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ─── Hero ─── */
+    header.hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(192,144,48,0.06), transparent);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 14px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: Georgia, "Playfair Display", serif;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 18px;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--text-mute);
+      max-width: 640px;
+      margin: 0 0 22px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 22px;
+      font-size: 13.5px;
+      color: var(--text-mute);
+    }
+    .meta span strong { color: var(--text); font-weight: 500; }
+
+    /* ─── Sections ─── */
+    section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-family: Georgia, "Playfair Display", serif;
+      font-size: clamp(22px, 3.5vw, 30px);
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+    h2 .tag {
+      display: inline-block;
+      font-family: -apple-system, sans-serif;
+      font-size: 12px;
+      background: var(--gold);
+      color: var(--bg);
+      padding: 3px 9px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-right: 10px;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 17px;
+      margin: 24px 0 10px;
+      color: var(--text);
+      font-weight: 600;
+    }
+    p { margin: 0 0 14px; }
+    p.lead {
+      font-size: 16.5px;
+      color: var(--text-mute);
+      margin-bottom: 26px;
+    }
+
+    /* ─── Card ─── */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin: 18px 0;
+    }
+    .card--gold {
+      background: var(--gold-soft);
+      border-color: var(--gold-line);
+    }
+
+    /* ─── KPI grid ─── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 22px 0;
+    }
+    @media (min-width: 560px) {
+      .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .kpi {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+    .kpi__label {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-mute);
+      margin: 0 0 6px;
+    }
+    .kpi__value {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.1;
+      margin: 0 0 4px;
+      font-variant-numeric: tabular-nums;
+    }
+    .kpi__foot {
+      font-size: 13px;
+      color: var(--text-mute);
+      margin: 0;
+    }
+
+    /* ─── Table ─── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      min-width: 520px;
+    }
+    thead th {
+      text-align: left;
+      padding: 12px 16px;
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      color: var(--text);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    tbody td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: rgba(192,144,48,0.03); }
+    td.num { font-variant-numeric: tabular-nums; text-align: right; }
+    td.delta-pos { color: var(--ok); font-weight: 600; }
+    td.delta-neg { color: var(--err); font-weight: 600; }
+    td.mono { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 13px; }
+
+    /* ─── Status pill ─── */
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .pill--ok    { background: rgba(123,199,123,0.14); color: var(--ok);   }
+    .pill--warn  { background: rgba(224,164,74,0.14);  color: var(--warn); }
+    .pill--err   { background: rgba(224,101,101,0.14); color: var(--err);  }
+
+    /* ─── Diff blocks ─── */
+    .diff {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    @media (min-width: 700px) { .diff { grid-template-columns: 1fr 1fr; } }
+    .diff__before, .diff__after {
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      line-height: 1.5;
+      border: 1px solid var(--border);
+    }
+    .diff__before {
+      background: rgba(224,101,101,0.06);
+      border-color: rgba(224,101,101,0.25);
+    }
+    .diff__after {
+      background: rgba(123,199,123,0.06);
+      border-color: rgba(123,199,123,0.25);
+    }
+    .diff__label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+    .diff__before .diff__label { color: var(--err); }
+    .diff__after  .diff__label { color: var(--ok);  }
+    .diff code {
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+
+    /* ─── Commit block ─── */
+    .commit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px;
+      color: var(--gold);
+    }
+
+    /* ─── List ─── */
+    ul.check { list-style: none; padding: 0; margin: 14px 0; }
+    ul.check li {
+      padding: 8px 0 8px 30px;
+      position: relative;
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul.check li::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 14px;
+      width: 8px; height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-mute);
+      text-align: center;
+    }
+
+    /* ─── Print ─── */
+    @media print {
+      body { background: white; color: black; }
+      .kpi__value { color: #8B6B24; }
+      section { break-inside: avoid; page-break-inside: avoid; }
+      .table-wrap { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Relatório executivo · SPIDERRANK v2.0</p>
+      <h1>Correções aplicadas após varredura técnica</h1>
+      <p class="subtitle">
+        Três correções priorizadas a partir do diagnóstico técnico e do
+        framework SPIDERRANK v2 aplicadas aos 286 HTMLs do repositório.
+        Zero degradação em compliance OAB, base técnica e schema.
+      </p>
+      <div class="meta">
+        <span><strong>Projeto:</strong> Consilium — Advocacia Empresarial</span>
+        <span><strong>Repo:</strong> vin-diniz/Consilium</span>
+        <span><strong>Branch:</strong> main</span>
+        <span><strong>Commits:</strong> fee8227 · 4c71abc</span>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="sumario">
+    <div class="container">
+      <h2>Sumário executivo</h2>
+      <p class="lead">
+        O diagnóstico prévio mediu três frentes com espaço de ganho concreto.
+        Todas foram atacadas nesta rodada — sem alteração de estrutura semântica,
+        sem quebra de JSON-LD e sem regressão em compliance OAB.
+      </p>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <p class="kpi__label">Arquivos tocados</p>
+          <p class="kpi__value">357</p>
+          <p class="kpi__foot">de 286 HTMLs no total do site</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__label">H2 convertidos</p>
+          <p class="kpi__value">545</p>
+          <p class="kpi__foot">statement → pergunta pesquisável</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__label">Compliance</p>
+          <p class="kpi__value">100%</p>
+          <p class="kpi__foot">0 quebras em JSON-LD, OAB e schema</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Frente</th>
+              <th>Origem</th>
+              <th>Status</th>
+              <th>Commit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>P0 — Modalidades de honorários</strong></td>
+              <td>Risco Provimento 205/2021</td>
+              <td><span class="pill pill--ok">resolvido</span></td>
+              <td class="mono">fee8227</td>
+            </tr>
+            <tr>
+              <td><strong>P1a — Canonical label</strong></td>
+              <td>Framework §16</td>
+              <td><span class="pill pill--ok">resolvido</span></td>
+              <td class="mono">4c71abc</td>
+            </tr>
+            <tr>
+              <td><strong>P1b — H2 pergunta pesquisável</strong></td>
+              <td>Framework §15</td>
+              <td><span class="pill pill--ok">majoritário</span></td>
+              <td class="mono">4c71abc</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="p0">
+    <div class="container">
+      <h2><span class="tag">P0</span>Modalidades de honorários removidas</h2>
+      <p class="lead">
+        Diagnóstico apontou o hub <code>/servicos/cobranca-empresarial</code>
+        exibindo <em>MODALIDADE 01 · Honorário fixo</em>, <em>MODALIDADE 02 · Honorário misto</em>
+        e <em>MODALIDADE 03 · Honorário de êxito</em>. O disclaimer
+        "A Consilium não estabelece nem cobra valores" não neutraliza o problema:
+        descrever <strong>modelos de honorários</strong> ativa a Categoria 16 do grafo
+        de conhecimento, pauta que os sprints recentes (tag-along, drag-along,
+        protocolo familiar) decidiram deliberadamente silenciar por conformidade com o
+        Provimento 205/2021 do Conselho Federal da OAB.
+      </p>
+
+      <h3>Substituições aplicadas</h3>
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes</p>
+          <p><code>&lt;section id="honorarios"&gt;</code></p>
+          <p>MODALIDADES DE HONORÁRIOS · Modelos que se adaptam ao perfil do crédito.</p>
+          <p><strong>MODALIDADE 01</strong> Honorário fixo<br>
+          <strong>MODALIDADE 02</strong> Honorário misto<br>
+          <strong>MODALIDADE 03</strong> Honorário de êxito</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p><code>&lt;section id="custo-inadimplencia"&gt;</code></p>
+          <p><strong>Qual o custo real da inadimplência empresarial mantida no ativo?</strong></p>
+          <p>Perda direta com Art. 406 CC · Custo de oportunidade · Desconto de prescrição (Cheque 6m Lei 7.357/85, Art. 206 CC)</p>
+        </div>
+      </div>
+
+      <h3>Também substituído no FAQPage (JSON-LD)</h3>
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes · Q5</p>
+          <p>"Como funciona a estrutura de honorários na cobrança empresarial?"</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois · Q5</p>
+          <p>"Qual o custo real da inadimplência empresarial mantida no ativo?"</p>
+        </div>
+      </div>
+
+      <h3>Também substituído no FAQ HTML (Q4)</h3>
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes · Q4</p>
+          <p>"A Consilium cobra pelo encaminhamento?" · resposta menciona honorários</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois · Q4</p>
+          <p>"A partir de qual valor de crédito compensa estruturar cobrança judicial?" · pergunta técnica, sem menção a honorários</p>
+        </div>
+      </div>
+
+      <div class="card card--gold">
+        <p style="margin:0;">
+          <strong>Validação:</strong> ocorrências residuais de <code>honor*</code> no hub cobrança:
+          <span class="pill pill--ok">0 (antes: 8)</span> ·
+          JSON-LD válido, framework OAB alinhado com o padrão editorial dos sprints recentes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="p1a">
+    <div class="container">
+      <h2><span class="tag">P1a</span>Canonical label unificado</h2>
+      <p class="lead">
+        Framework §16 (Canonical Label Rule): LLMs tratam variação terminológica
+        como entidades separadas, fragmentando a autoridade. O diagnóstico
+        identificou <strong>três variantes</strong> do nome da marca convivendo na
+        propriedade <code>name</code> da Organization schema — U+2014 (em-dash),
+        U+00B7 (middle-dot) e um outlier no index.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Variante em <code>Organization.name</code></th>
+              <th class="num">Antes</th>
+              <th class="num">Depois</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Consilium — Advocacia Empresarial <span class="pill pill--ok">canônico</span> <br><small style="color:var(--text-mute);">em-dash · U+2014</small></td>
+              <td class="num">185</td>
+              <td class="num delta-pos">286</td>
+            </tr>
+            <tr>
+              <td>Consilium · Advocacia Empresarial <br><small style="color:var(--text-mute);">middle-dot · U+00B7</small></td>
+              <td class="num">100</td>
+              <td class="num delta-pos">0</td>
+            </tr>
+            <tr>
+              <td>Consilium Advogados Empresariais <br><small style="color:var(--text-mute);">outlier · index.html</small></td>
+              <td class="num">1</td>
+              <td class="num delta-pos">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <p class="kpi__label">Arquivos normalizados</p>
+          <p class="kpi__value">101</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__label">Substituições</p>
+          <p class="kpi__value">502</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__label">Nome único no schema</p>
+          <p class="kpi__value">1</p>
+          <p class="kpi__foot">em 286/286 páginas</p>
+        </div>
+      </div>
+
+      <p>
+        <code>alternateName</code> <span style="color:var(--text-mute);">["Consilium Advocacia", "Consilium Hub Jurídico"]</span>
+        preservado — são aliases oficiais legítimos declarados no schema.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="p1b">
+    <div class="container">
+      <h2><span class="tag">P1b</span>H2 statement → pergunta pesquisável</h2>
+      <p class="lead">
+        Framework §15 (Heading-as-Prompt): LLMs tratam H2 como prompt e o parágrafo
+        seguinte como resposta. Diagnóstico media 33% dos H2 do site em formato
+        pergunta pesquisável — abaixo do majoritário exigido pelo framework. Três
+        fases de batch idempotente reverteram esse número.
+      </p>
+
+      <h3>Ganho por tipo de página</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th class="num">Arquivos</th>
+              <th class="num">% H2 pergunta ANTES</th>
+              <th class="num">% H2 pergunta DEPOIS</th>
+              <th class="num">Δ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Home</td>
+              <td class="num">1</td>
+              <td class="num">71%</td>
+              <td class="num">71%</td>
+              <td class="num" style="color:var(--text-mute);">—</td>
+            </tr>
+            <tr>
+              <td>Hubs de serviço</td>
+              <td class="num">4</td>
+              <td class="num">66%</td>
+              <td class="num">66%</td>
+              <td class="num" style="color:var(--text-mute);">—</td>
+            </tr>
+            <tr>
+              <td><strong>Locais</strong></td>
+              <td class="num">252</td>
+              <td class="num">32%</td>
+              <td class="num">57%</td>
+              <td class="num delta-pos">+25 pts</td>
+            </tr>
+            <tr>
+              <td><strong>Posts</strong></td>
+              <td class="num">22</td>
+              <td class="num">36%</td>
+              <td class="num">49%</td>
+              <td class="num delta-pos">+13 pts</td>
+            </tr>
+            <tr>
+              <td>Categorias · institucionais</td>
+              <td class="num">7</td>
+              <td class="num">6–16%</td>
+              <td class="num">6–16%</td>
+              <td class="num" style="color:var(--text-mute);">— (section-headers legítimos)</td>
+            </tr>
+            <tr style="background:rgba(192,144,48,0.05);">
+              <td><strong>SITE TOTAL</strong></td>
+              <td class="num"><strong>286</strong></td>
+              <td class="num"><strong>33%</strong></td>
+              <td class="num"><strong>55%</strong></td>
+              <td class="num delta-pos"><strong>+22 pts</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Fase 1 · 222 arquivos, 379 H2</h3>
+      <p>Copy metafórica e statement direto convertidos para pergunta ancorada no pain-point técnico.</p>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes (50×)</p>
+          <p>Sociedade sem acordo formal escala impasse até a ação de dissolução parcial.</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Por que sociedade sem acordo formal escala para dissolução parcial?</p>
+        </div>
+      </div>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes (35×)</p>
+          <p>Crédito parado é crédito caminhando para prescrição</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Quanto tempo o crédito empresarial resiste antes de prescrever?</p>
+        </div>
+      </div>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes (67×)</p>
+          <p>Apuração de haveres: como funciona</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Como funciona a apuração de haveres na saída de sócio?</p>
+        </div>
+      </div>
+
+      <h3>Fase 2 · 128 arquivos, 128 H2</h3>
+      <p>
+        Copy motivacional <em>"Em 4 horas úteis..."</em> — marcada pelo framework §11.5 como
+        marketing speak (anti-padrão) — convertida em pergunta técnica sobre prazo de diagnóstico.
+      </p>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes (55×)</p>
+          <p>Em 4 horas úteis, sua empresa está conectada ao especialista certo.</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Qual o prazo entre o contato inicial e o diagnóstico jurídico?</p>
+        </div>
+      </div>
+
+      <h3>Fase 3 · 6 posts, 38 H2</h3>
+      <p>
+        Substituições literais nos 5 posts com maior concentração de H2 statement
+        (tag-along, drag-along, dissolução parcial, sucessão por óbito, desconsideração
+        da personalidade jurídica, empresa processada por dano moral).
+      </p>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes</p>
+          <p>Teoria maior e teoria menor: as duas regras paralelas no ordenamento</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Teoria maior ou teoria menor: qual se aplica ao caso concreto?</p>
+        </div>
+      </div>
+
+      <div class="diff">
+        <div class="diff__before">
+          <p class="diff__label">antes</p>
+          <p>ITCMD em MG, RJ e PR: alíquotas, base de cálculo e prazos</p>
+        </div>
+        <div class="diff__after">
+          <p class="diff__label">depois</p>
+          <p>Como se calcula o ITCMD em MG, RJ e PR na sucessão empresarial?</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">O que ficou fora do escopo (por design)</h3>
+        <ul class="check">
+          <li>
+            <strong>Categorias e institucionais</strong> (6–16%): H2 restantes são
+            section-headers legítimos ("Direito Societário", "Direitos do Titular
+            LGPD") — framework §15 permite statement quando responde a query.
+          </li>
+          <li>
+            <strong>Locais em 57%</strong>: os 876 H2 remanescentes são estruturais
+            (<em>"Outros serviços empresariais em [C]"</em> 252×, <em>"Atuação
+            perante TJ-[UF]"</em> 85×, <em>"Dúvidas técnicas sobre X em [C]"</em> 100×).
+          </li>
+          <li>
+            <strong>Posts em 49%</strong>: os 127 restantes incluem "Perguntas
+            frequentes" (padrão FAQ) e "Posicionamento final" (fechamento editorial).
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="validacao">
+    <div class="container">
+      <h2>Validação técnica final</h2>
+      <p class="lead">Rodada de checks pós-correção. Zero regressão em nenhum critério.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Check</th>
+              <th>Resultado</th>
+              <th>Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JSON-LD válido (<code>json.loads</code> em todos)</td>
+              <td class="num">286/286</td>
+              <td><span class="pill pill--ok">ok</span></td>
+            </tr>
+            <tr>
+              <td>Ocorrências de <code>honor*</code> no hub cobrança</td>
+              <td class="num">0</td>
+              <td><span class="pill pill--ok">era 8</span></td>
+            </tr>
+            <tr>
+              <td>Único label na <code>Organization.name</code> schema</td>
+              <td class="num">✓</td>
+              <td><span class="pill pill--ok">Consilium — Advocacia Empresarial</span></td>
+            </tr>
+            <tr>
+              <td>Páginas com <code>noindex</code></td>
+              <td class="num">0/286</td>
+              <td><span class="pill pill--ok">index/follow em todas</span></td>
+            </tr>
+            <tr>
+              <td>Canonical presente e no domínio canônico</td>
+              <td class="num">286/286</td>
+              <td><span class="pill pill--ok">ok</span></td>
+            </tr>
+            <tr>
+              <td>Person canônico <code>#giancarlo</code> (OAB/PR 122.982)</td>
+              <td class="num">281/286</td>
+              <td><span class="pill pill--warn">falta em blog feed + 4 categorias — P2 do backlog</span></td>
+            </tr>
+            <tr>
+              <td>Density factual (≥1 citação de autoridade)</td>
+              <td class="num">286/286</td>
+              <td><span class="pill pill--ok">270 com densidade forte (≥5)</span></td>
+            </tr>
+            <tr>
+              <td>Date stamp (framework A-VI)</td>
+              <td class="num">286/286</td>
+              <td><span class="pill pill--ok">ok</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="backlog">
+    <div class="container">
+      <h2>O que ficou para sprint próprio</h2>
+      <p class="lead">
+        Achados do diagnóstico que exigem escopo próprio, ordenados por alavanca.
+        A camada durável off-domain (framework §1–2) é onde o framework diz que
+        o game mais se decide — e é a que não se resolve dentro do repo.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Prioridade</th>
+              <th>Frente</th>
+              <th>Peso pelo framework</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="pill pill--err">crítico</span></td>
+              <td>Camada durável off-domain — Perfil do Google (money page local nº 1), presença em vídeo (YouTube), menções em diretórios e imprensa</td>
+              <td>Framework §§1–2 · A-IV + G-III · <strong>o que o motor mais confia</strong></td>
+            </tr>
+            <tr>
+              <td><span class="pill pill--warn">médio</span></td>
+              <td>Blog feed + 4 categorias sem Person <code>#giancarlo</code></td>
+              <td>Reforça EEAT do responsável técnico do blog (CollectionPage)</td>
+            </tr>
+            <tr>
+              <td><span class="pill pill--warn">médio</span></td>
+              <td>Answer capsules 60–70 palavras (framework pede 40–60) — aperto de 10–15% em hubs</td>
+              <td>Framework §8 · A-II</td>
+            </tr>
+            <tr>
+              <td><span class="pill pill--warn">baixo</span></td>
+              <td>Ski Ramp: TL;DR de posts longos em ~32% (framework pede primeiros 30%)</td>
+              <td>Framework §7 · zona ouro</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>
+        Consilium — Advocacia Empresarial · relatório gerado a partir da varredura
+        técnica sobre 286 HTMLs · alinhado ao Provimento 205/2021 do Conselho Federal
+        da OAB e ao SPIDERRANK Content Framework, Edição Universal v2.0
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
